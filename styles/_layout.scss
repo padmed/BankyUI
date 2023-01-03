@@ -4,11 +4,27 @@
   display: none;
 }
 
+html,
+body {
+  height: 100%;
+}
 body {
   background-color: #f4f4f4;
   font-family: base.$font-nunito;
   font-weight: 800;
   min-width: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px 150px 170px 500px;
+  gap: 25px;
+
+  & > * {
+    border: 1px solid;
+  }
+}
+
+.top {
+  background-color: base.$white;
 }
 
 header {
@@ -16,7 +32,7 @@ header {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
   background-color: base.$blue;
-  color: base.$white;
+  color: base.$background-white;
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
   align-items: center;
@@ -37,8 +53,8 @@ header {
   margin-right: 3vh;
   img {
     width: 25px;
-    filter: invert(99%) sepia(1%) saturate(6264%) hue-rotate(300deg)
-      brightness(110%) contrast(98%);
+    filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg)
+      brightness(116%) contrast(91%);
   }
 }
 
