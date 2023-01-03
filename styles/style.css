@@ -24,9 +24,16 @@ body > * {
 
 .top {
   background-color: #fdfcfa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(24, 90, 219, 0.4);
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
 }
 
 header {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
@@ -56,4 +63,38 @@ header .sidebar {
 
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
+}
+.card {
+  background-image: url(../img/holiday-illustration.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid #185adb;
+  width: 270px;
+  height: 160px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  color: #fdfcfa;
+}
+.card .infoBack {
+  background-color: #0f2c56;
+  margin: 15px;
+  padding: 1px;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 5px;
+}
+.card .left {
+  justify-self: start;
+}
+.card .right {
+  justify-self: end;
+}
+.card .bottom {
+  align-self: end;
+}
+.card .up {
+  align-self: start;
 }/*# sourceMappingURL=style.css.map */

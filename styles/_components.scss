@@ -1,0 +1,41 @@
+@use "base";
+
+.card {
+  background-image: url(../img/holiday-illustration.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid base.$blue;
+  width: 270px;
+  height: 160px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  color: base.$white;
+
+  .infoBack {
+    background-color: base.$dark;
+    margin: 15px;
+    padding: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 5px;
+  }
+
+  .left {
+    justify-self: start;
+  }
+
+  .right {
+    justify-self: end;
+  }
+
+  .bottom {
+    align-self: end;
+  }
+
+  .up {
+    align-self: start;
+  }
+}
