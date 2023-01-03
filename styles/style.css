@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+.desktop {
+  display: none;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  min-width: 200px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #185adb;
+  color: #fdfcfa;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  align-items: center;
+  font-size: 13px;
+}
+header h1 {
+  justify-self: center;
+}
+header .sidebar {
+  margin-left: 3vh;
+  justify-self: start;
+}
+
+.support {
+  justify-self: end;
+  margin-right: 3vh;
+}
+.support img {
+  width: 25px;
+  filter: invert(99%) sepia(1%) saturate(6264%) hue-rotate(300deg) brightness(110%) contrast(98%);
+}
+
+@media only screen and (min-width: 480px) {
+  /* CSS rules for mobile size go here */
+}/*# sourceMappingURL=style.css.map */
