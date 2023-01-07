@@ -61,6 +61,23 @@ header .sidebar {
   filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg) brightness(116%) contrast(91%);
 }
 
+.top {
+  width: 100%;
+}
+
+.swiper {
+  width: 270px;
+}
+
+.swiper-wrapper {
+  width: 270px;
+  height: 100%;
+}
+
+.swiper-slider {
+  width: 100%;
+}
+
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }
@@ -70,8 +87,6 @@ header .sidebar {
   background-size: cover;
   background-repeat: no-repeat;
   border: 3px solid #185adb;
-  width: 270px;
-  height: 160px;
   border-radius: 10px;
   display: grid;
   grid-template-rows: 1fr 1fr;

@@ -65,6 +65,21 @@ header {
   }
 }
 
+.top {
+  width: 100%;
+}
+
+.swiper {
+  width: 270px;
+}
+
+.swiper-wrapper {
+  width: 270px;
+  height: 100%;
+}
+.swiper-slider {
+  width: 100%;
+}
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }

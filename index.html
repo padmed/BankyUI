@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="logic.js" defer></script>
+
     <title>Banky</title>
   </head>
   <body>
@@ -18,7 +26,7 @@
       <div class="darkMode"></div>
       <div class="profile"></div>
     </header>
-    <div class="top" class="mobile">
+    <div class="top mobile">
       <header>
         <div class="sidebar">
           <img src="icons/Group 4.svg" alt="Sidebar" />
@@ -29,7 +37,7 @@
         </div>
       </header>
       <p>Total Balance <span>$1575,86</span></p>
-      <div class="card">
+      <!-- <div class="card">
         <div class="infoBack left up"><span class="date">03/23</span></div>
         <div class="infoBack right up"><span class="type">Digital</span></div>
         <div class="infoBack bottom left">
@@ -38,8 +46,50 @@
         <div class="infoBack right bottom">
           <span class="digits">•••• 5234</span>
         </div>
+      </div> -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="infoBack left up">
+                <span class="date">03/23</span>
+              </div>
+              <div class="infoBack right up">
+                <span class="type">Digital</span>
+              </div>
+              <div class="infoBack bottom left">
+                <span class="amount">$1200,20</span>
+              </div>
+              <div class="infoBack right bottom">
+                <span class="digits">•••• 5234</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="infoBack left up">
+                <span class="date">03/23</span>
+              </div>
+              <div class="infoBack right up">
+                <span class="type">Digital</span>
+              </div>
+              <div class="infoBack bottom left">
+                <span class="amount">$1200,20</span>
+              </div>
+              <div class="infoBack right bottom">
+                <span class="digits">•••• 5234</span>
+              </div>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
       </div>
-      <div class="scrollBullets"></div>
     </div>
     <nav></nav>
     <main></main>
