@@ -78,10 +78,28 @@
   @include base.contact-image;
 }
 
-.contact.add-con {
-  grid-area: addCon;
-
+.contact {
   img {
     width: 60px;
   }
+}
+
+.active.photo-placeholder,
+img {
+  box-shadow: 0 0 4px 2px base.$blue;
+  transform: scale(1.1);
+}
+
+.contact.add-con {
+  img {
+    width: 60px;
+    box-shadow: none;
+  }
+}
+
+.active.add-contact {
+  transform: scale(1.15);
+}
+.add-contact {
+  transform: none;
 }
