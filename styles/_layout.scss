@@ -15,7 +15,7 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 350px 150px 170px 500px;
+  grid-template-rows: 7fr 2fr 1fr 1fr;
   gap: 25px;
 
   & > * {
@@ -70,16 +70,20 @@ header {
 }
 
 .swiper {
-  width: 270px;
-}
-
-.swiper-wrapper {
-  width: 270px;
+  width: max(99vw, 260px);
   height: 100%;
 }
-.swiper-slider {
-  width: 100%;
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
 }
+
+// .swiper-slide-prev {
+//   display: flex;
+//   justify-content: end;
+// }
+
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }

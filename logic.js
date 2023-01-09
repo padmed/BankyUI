@@ -1,17 +1,12 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-
-  centeredSlides: true,
-  // slidesPerView: 1,
-  focusAt: "center",
-  spaceBetween: 20,
-  slidesPerView: 1,
-
-  // If we need pagination
+var swiper = new Swiper(".swiper", {
+  grabCursor: true,
+  effect: "creative",
   pagination: {
     el: ".swiper-pagination",
   },
+  creativeEffect: {
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
 });
-
-console.log(swiper.width);

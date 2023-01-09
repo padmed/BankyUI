@@ -8,9 +8,13 @@
   border: 3px solid base.$blue;
   border-radius: 10px;
   display: grid;
+  height: 180px;
+  width: 280px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   color: base.$white;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 
   .infoBack {
     background-color: base.$dark;
@@ -19,6 +23,7 @@
     padding-right: 3px;
     padding-left: 3px;
     border-radius: 5px;
+    white-space: nowrap;
   }
 
   .left {
