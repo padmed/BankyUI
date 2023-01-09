@@ -14,8 +14,8 @@ body {
   font-weight: 800;
   min-width: 200px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 370px 170px 200px 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: 370px auto 200px 1fr;
   gap: 25px;
 }
 
@@ -82,31 +82,15 @@ header .qrcode img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 13px;
   display: grid;
-  grid-template-rows: -webkit-min-content 1fr;
-  grid-template-rows: min-content 1fr;
-  grid-template-columns: repeat(autofill, 80px);
+  grid-template-rows: 5px 1fr;
+  grid-template-columns: 1fr;
   color: #0f2c56;
   gap: 20px;
-  grid-template-areas: "head head head head head" "first second third addCon .";
 }
 .quick-transaction h3 {
-  grid-area: head;
   margin: 0;
   justify-self: center;
   margin-top: 10px;
-}
-.quick-transaction .contact.first {
-  grid-area: first;
-  margin-left: 3vh;
-}
-.quick-transaction .contact.second {
-  grid-area: second;
-}
-.quick-transaction .contact.third {
-  grid-area: third;
-}
-.quick-transaction .contact.add-con {
-  grid-area: addCon;
 }
 .quick-transaction .contact {
   display: flex;
@@ -116,7 +100,14 @@ header .qrcode img {
   gap: 7px;
   white-space: nowrap;
   font-size: 13px;
-  width: 70;
+  width: 70px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  gap: 20px;
 }
 
 .deposits {
