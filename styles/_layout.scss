@@ -49,9 +49,14 @@ header {
     justify-self: center;
   }
 
-  .sidebar {
-    margin-left: 3vh;
+  .qrcode {
     justify-self: start;
+    margin-left: 3vh;
+    img {
+      width: 25px;
+      filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg)
+        brightness(116%) contrast(91%);
+    }
   }
 }
 
