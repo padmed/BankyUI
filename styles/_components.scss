@@ -53,3 +53,35 @@
     align-self: start;
   }
 }
+
+.contact {
+  .photo-placeholder {
+    border: 1px solid base.$blue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+.first > .photo-placeholder {
+  background-image: url("../img/person1.png");
+  @include base.contact-image;
+}
+
+.second > .photo-placeholder {
+  background-image: url("../img/person4.png");
+  @include base.contact-image;
+}
+
+.third > .photo-placeholder {
+  background-image: url("../img/person5.png");
+  @include base.contact-image;
+}
+
+.contact.add-con {
+  grid-area: addCon;
+
+  img {
+    width: 60px;
+  }
+}

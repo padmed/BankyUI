@@ -15,7 +15,7 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 370px 150px 1fr 1fr;
+  grid-template-rows: 370px 170px 200px 1fr;
   gap: 25px;
 }
 
@@ -27,7 +27,7 @@ body {
   border-bottom: 2px solid rgb(24, 90, 219, 0.3);
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 header {
@@ -85,9 +85,9 @@ header {
   @include base.border-style;
   display: grid;
   grid-template-rows: min-content 1fr;
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(autofill, 80px);
   color: base.$dark;
-  gap: 3vw;
+  gap: 20px;
   grid-template-areas:
     "head head head head head"
     "first second third addCon .";
@@ -96,6 +96,7 @@ header {
     grid-area: head;
     margin: 0;
     justify-self: center;
+    margin-top: 10px;
   }
 
   .contact.first {
@@ -109,7 +110,7 @@ header {
     grid-area: third;
   }
 
-  .contact.add {
+  .contact.add-con {
     grid-area: addCon;
   }
 
@@ -118,19 +119,16 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 7px;
     white-space: nowrap;
     font-size: 13px;
-    border: 1px solid;
     width: 70;
-
-    .photo-placeholder {
-      border: 1px solid base.$blue;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-    }
   }
+}
+
+.deposits {
+  border: 1px solid;
+  @include base.border-style;
 }
 
 @media only screen and (min-width: 480px) {

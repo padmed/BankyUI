@@ -15,7 +15,7 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 370px 150px 1fr 1fr;
+  grid-template-rows: 370px 170px 200px 1fr;
   gap: 25px;
 }
 
@@ -27,7 +27,7 @@ body {
   border-bottom: 2px solid rgba(24, 90, 219, 0.3);
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 header {
@@ -84,16 +84,16 @@ header .qrcode img {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr;
   grid-template-rows: min-content 1fr;
-  grid-template-columns: repeat(4, -webkit-min-content);
-  grid-template-columns: repeat(4, min-content);
+  grid-template-columns: repeat(autofill, 80px);
   color: #0f2c56;
-  gap: 3vw;
+  gap: 20px;
   grid-template-areas: "head head head head head" "first second third addCon .";
 }
 .quick-transaction h3 {
   grid-area: head;
   margin: 0;
   justify-self: center;
+  margin-top: 10px;
 }
 .quick-transaction .contact.first {
   grid-area: first;
@@ -105,7 +105,7 @@ header .qrcode img {
 .quick-transaction .contact.third {
   grid-area: third;
 }
-.quick-transaction .contact.add {
+.quick-transaction .contact.add-con {
   grid-area: addCon;
 }
 .quick-transaction .contact {
@@ -113,17 +113,17 @@ header .qrcode img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 7px;
   white-space: nowrap;
   font-size: 13px;
-  border: 1px solid;
   width: 70;
 }
-.quick-transaction .contact .photo-placeholder {
-  border: 1px solid #185adb;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+
+.deposits {
+  border: 1px solid;
+  border: 2px solid rgba(24, 90, 219, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -180,4 +180,39 @@ header .qrcode img {
 }
 .card .up {
   align-self: start;
+}
+
+.contact .photo-placeholder {
+  border: 1px solid #185adb;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.first > .photo-placeholder {
+  background-image: url("../img/person1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.second > .photo-placeholder {
+  background-image: url("../img/person4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.third > .photo-placeholder {
+  background-image: url("../img/person5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact.add-con {
+  grid-area: addCon;
+}
+.contact.add-con img {
+  width: 60px;
 }/*# sourceMappingURL=style.css.map */
