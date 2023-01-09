@@ -5,3 +5,9 @@ $blue: #185adb;
 $white: #fdfcfa;
 $background-white: #f4f4f4;
 $dark: #0f2c56;
+
+@mixin border-style {
+  border: 2px solid rgb(24, 90, 219, 0.3);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
+}

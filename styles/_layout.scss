@@ -15,12 +15,8 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 370px 2fr 1fr 1fr;
+  grid-template-rows: 370px 150px 1fr 1fr;
   gap: 25px;
-
-  & > * {
-    border: 1px solid;
-  }
 }
 
 .top {
@@ -28,9 +24,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid rgb(24, 90, 219, 0.4);
+  border-bottom: 2px solid rgb(24, 90, 219, 0.3);
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -84,10 +81,57 @@ header {
   justify-content: center;
 }
 
-// .swiper-slide-prev {
-//   display: flex;
-//   justify-content: end;
-// }
+.quick-transaction {
+  @include base.border-style;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: repeat(4, min-content);
+  color: base.$dark;
+  gap: 3vw;
+  grid-template-areas:
+    "head head head head head"
+    "first second third addCon .";
+
+  h3 {
+    grid-area: head;
+    margin: 0;
+    justify-self: center;
+  }
+
+  .contact.first {
+    grid-area: first;
+    margin-left: 3vh;
+  }
+  .contact.second {
+    grid-area: second;
+  }
+  .contact.third {
+    grid-area: third;
+  }
+
+  .contact.add {
+    grid-area: addCon;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    white-space: nowrap;
+    font-size: 13px;
+    border: 1px solid;
+    width: 70;
+
+    .photo-placeholder {
+      border: 1px solid base.$blue;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+  }
+}
 
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */

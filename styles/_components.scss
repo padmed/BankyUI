@@ -1,7 +1,17 @@
 @use "base";
 
-.card {
+.one {
   background-image: url(../img/holiday-illustration.jpg);
+}
+
+.two {
+  background-image: url(../img/summer-digital-illustrations.jpg);
+}
+.three {
+  background-image: url(../img/digital-illustration-summer.png);
+}
+
+.card {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +25,7 @@
   color: base.$white;
   margin-top: 3vh;
   margin-bottom: 3vh;
+  user-select: none;
 
   .infoBack {
     background-color: base.$dark;
