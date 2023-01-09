@@ -84,8 +84,7 @@
   }
 }
 
-.active.photo-placeholder,
-img {
+.active.photo-placeholder {
   box-shadow: 0 0 4px 2px base.$blue;
   transform: scale(1.1);
 }
