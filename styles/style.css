@@ -15,7 +15,7 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 370px auto 200px 1fr;
+  grid-template-rows: 370px auto auto 1fr;
   gap: 25px;
 }
 
@@ -82,7 +82,7 @@ header .qrcode img {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 13px;
   display: grid;
-  grid-template-rows: 5px 1fr;
+  grid-template-rows: 1px 1fr;
   grid-template-columns: 1fr;
   color: #0f2c56;
   gap: 20px;
@@ -115,8 +115,16 @@ header .qrcode img {
   border: 2px solid rgba(24, 90, 219, 0.3);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 13px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-
+.deposits h3 {
+  grid-column: 1/3;
+  justify-self: center;
+  margin: 0;
+  margin-top: 10px;
+}
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }
