@@ -171,6 +171,28 @@ header {
   }
 }
 
+.transactions {
+  @include base.border-style;
+  display: grid;
+  grid-template-rows: 0.2fr repeat(3, 1fr) 0, 3fr;
+  grid-template-columns: 1fr;
+
+  .transactions-header {
+    display: flex;
+
+    h3 {
+      flex: 1;
+      text-align: center;
+      padding-left: 20px;
+    }
+
+    img {
+      width: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }

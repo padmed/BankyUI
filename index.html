@@ -1,141 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="logic.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="logic.js" defer></script>
 
-    <title>Banky</title>
-  </head>
-  <body>
-    <header class="desktop">
-      <h1>Banky</h1>
-      <div class="search">
-        <input type="text" />
-      </div>
-      <div class="notification"></div>
-      <div class="darkMode"></div>
-      <div class="profile"></div>
-    </header>
-    <div class="top mobile">
-      <header>
-        <div class="qrcode">
-          <img src="icons/qrcode-solid.svg" alt="Sidebar" />
-        </div>
-        <h1>Banky</h1>
-        <div class="support">
-          <img src="icons/headset-solid.svg" alt="headset" />
-        </div>
-      </header>
-      <p>Total Balance <span>$1575,86</span></p>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="card one">
-              <div class="infoBack left up">
-                <span class="date">03/23</span>
-              </div>
-              <div class="infoBack right up">
-                <span class="type">Digital</span>
-              </div>
-              <div class="infoBack bottom left">
-                <span class="amount">$1200,20</span>
-              </div>
-              <div class="infoBack right bottom">
-                <span class="digits">•••• 5234</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card two">
-              <div class="infoBack left up">
-                <span class="date">02/24</span>
-              </div>
-              <div class="infoBack right up">
-                <span class="type">Digital</span>
-              </div>
-              <div class="infoBack bottom left">
-                <span class="amount">$200,40</span>
-              </div>
-              <div class="infoBack right bottom">
-                <span class="digits">•••• 1234</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card three">
-              <div class="infoBack left up">
-                <span class="date">03/23</span>
-              </div>
-              <div class="infoBack right up">
-                <span class="type"><em>Digital</em></span>
-              </div>
-              <div class="infoBack bottom left">
-                <span class="amount">$1200,20</span>
-              </div>
-              <div class="infoBack right bottom">
-                <span class="digits">•••• 5234</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-      </div>
+  <title>Banky</title>
+</head>
+<header class="desktop">
+  <h1>Banky</h1>
+  <div class="search">
+    <input type="text" />
+  </div>
+  <div class="notification"></div>
+  <div class="darkMode"></div>
+  <div class="profile"></div>
+</header>
+<div class="top mobile">
+  <header>
+    <div class="qrcode">
+      <img src="icons/qrcode-solid.svg" alt="Sidebar" />
     </div>
-    <div class="quick-transaction">
-      <h3>Quick transactions</h3>
-      <div class="contacts">
-        <div class="contact first">
-          <div class="photo-placeholder"></div>
-          <span class="name">Duda</span>
+    <h1>Banky</h1>
+    <div class="support">
+      <img src="icons/headset-solid.svg" alt="headset" />
+    </div>
+  </header>
+  <p>Total Balance <span>$1575,86</span></p>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="card one">
+          <div class="infoBack left up">
+            <span class="date">03/23</span>
+          </div>
+          <div class="infoBack right up">
+            <span class="type">Digital</span>
+          </div>
+          <div class="infoBack bottom left">
+            <span class="amount">$1200,20</span>
+          </div>
+          <div class="infoBack right bottom">
+            <span class="digits">•••• 5234</span>
+          </div>
         </div>
-        <div class="contact second">
-          <div class="photo-placeholder"></div>
-          <span class="name">Anna</span>
+      </div>
+      <div class="swiper-slide">
+        <div class="card two">
+          <div class="infoBack left up">
+            <span class="date">02/24</span>
+          </div>
+          <div class="infoBack right up">
+            <span class="type">Digital</span>
+          </div>
+          <div class="infoBack bottom left">
+            <span class="amount">$200,40</span>
+          </div>
+          <div class="infoBack right bottom">
+            <span class="digits">•••• 1234</span>
+          </div>
         </div>
-        <div class="contact third">
-          <div class="photo-placeholder"></div>
-          <span class="name">John</span>
-        </div>
-        <div class="contact add-con">
-          <img
-            src="icons/Add contact svg.svg"
-            class="add-contact"
-            alt="Add contact"
-          />
-          <span class="name">Add Contact</span>
+      </div>
+      <div class="swiper-slide">
+        <div class="card three">
+          <div class="infoBack left up">
+            <span class="date">03/23</span>
+          </div>
+          <div class="infoBack right up">
+            <span class="type"><em>Digital</em></span>
+          </div>
+          <div class="infoBack bottom left">
+            <span class="amount">$1200,20</span>
+          </div>
+          <div class="infoBack right bottom">
+            <span class="digits">•••• 5234</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="deposits">
-      <h3>Deposits and liabilities</h3>
-      <div class="deposit-type">
-        <img src="icons/Percentage icon.svg" alt="percentage" />
-        <span>Consumer credit</span>
-      </div>
-      <span class="deposit-amount"> $600,20</span>
-      <span class="line"></span>
-      <div class="details">
-        <span>See details</span>
-        <img src="icons/angle-right-solid.svg" alt="right" />
-      </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+  </div>
+</div>
+<div class="quick-transaction">
+  <h3>Quick transactions</h3>
+  <div class="contacts">
+    <div class="contact first">
+      <div class="photo-placeholder"></div>
+      <span class="name">Duda</span>
     </div>
-    <div class="transactions"></div>
-    <nav></nav>
-    <footer></footer>
-  </body>
-</html>
+    <div class="contact second">
+      <div class="photo-placeholder"></div>
+      <span class="name">Anna</span>
+    </div>
+    <div class="contact third">
+      <div class="photo-placeholder"></div>
+      <span class="name">John</span>
+    </div>
+    <div class="contact add-con">
+      <img
+        src="icons/Add contact svg.svg"
+        class="add-contact"
+        alt="Add contact"
+      />
+      <span class="name">Add Contact</span>
+    </div>
+  </div>
+</div>
+<div class="deposits">
+  <h3>Deposits and liabilities</h3>
+  <div class="deposit-type">
+    <img src="icons/Percentage icon.svg" alt="percentage" />
+    <span>Consumer credit</span>
+  </div>
+  <span class="deposit-amount"> $600,20</span>
+  <span class="line"></span>
+  <div class="details">
+    <span>See details</span>
+    <img src="icons/angle-right-solid.svg" alt="right" />
+  </div>
+</div>
+<div class="transactions">
+  <div class="transactions-header">
+    <h3>Recent transactions</h3>
+    <img src="icons/filter-solid.svg" alt="filter" />
+  </div>
+</div>
+<nav></nav>
+<footer></footer>
