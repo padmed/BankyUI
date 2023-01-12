@@ -15,8 +15,10 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 370px auto auto 1fr;
+  grid-template-rows: 370px auto auto auto;
   gap: 25px;
+  color: base.$dark;
+  letter-spacing: 3px;
 }
 
 .top {
@@ -94,6 +96,7 @@ header {
     margin: 0;
     justify-self: center;
     margin-top: 10px;
+    font-size: 17px;
   }
 
   .contact {
@@ -120,7 +123,7 @@ header {
   @include base.border-style;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30px 70px 80px;
+  grid-template-rows: 30px 65px 80px;
   align-items: center;
 
   h3 {
@@ -129,10 +132,11 @@ header {
     justify-self: center;
     margin: 0;
     margin-top: 10px;
+    font-size: 17px;
   }
   .deposit-type {
     align-self: end;
-    margin-left: 20px;
+    margin-left: 30px;
     gap: 10px;
     display: flex;
     align-items: center;
@@ -141,6 +145,12 @@ header {
     justify-self: end;
     margin-right: 20px;
     align-self: end;
+  }
+
+  .deposit-amount,
+  .deposit-type {
+    font-weight: 400;
+    font-size: 18px;
   }
 
   .line {
@@ -156,6 +166,8 @@ header {
     grid-row: 3/4;
     margin-top: 30px;
     justify-self: center;
+    cursor: pointer;
+    font-weight: 400;
   }
 }
 
