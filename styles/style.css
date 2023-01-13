@@ -313,22 +313,29 @@ header .qrcode img {
   border-radius: 50%;
 }
 
-.first > .photo-placeholder {
+.Duda > .photo-placeholder {
   background-image: url("../img/person1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.second > .photo-placeholder {
+.Anna > .photo-placeholder {
   background-image: url("../img/person4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.third > .photo-placeholder {
+.John > .photo-placeholder {
   background-image: url("../img/person5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Amanda > .photo-placeholder {
+  background-image: url("../img/person2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

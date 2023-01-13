@@ -63,18 +63,23 @@
   }
 }
 
-.first > .photo-placeholder {
+.Duda > .photo-placeholder {
   background-image: url("../img/person1.png");
   @include base.contact-image;
 }
 
-.second > .photo-placeholder {
+.Anna > .photo-placeholder {
   background-image: url("../img/person4.png");
   @include base.contact-image;
 }
 
-.third > .photo-placeholder {
+.John > .photo-placeholder {
   background-image: url("../img/person5.png");
+  @include base.contact-image;
+}
+
+.Amanda > .photo-placeholder {
+  background-image: url("../img/person2.png");
   @include base.contact-image;
 }
 
