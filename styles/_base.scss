@@ -17,3 +17,9 @@ $dark: #0f2c56;
   background-position: center;
   background-size: cover;
 }
+
+@mixin line {
+  border-bottom: 1px solid rgb(24, 90, 219, 0.3);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
