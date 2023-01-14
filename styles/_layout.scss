@@ -190,10 +190,10 @@ header {
     @include base.line;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .more {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -207,7 +207,7 @@ header {
   //   border: 1px solid;
   // }
   .date {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 14px;
     font-weight: 600;
     text-align: center;

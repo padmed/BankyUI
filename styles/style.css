@@ -189,10 +189,10 @@ header .qrcode img {
   margin-bottom: 25px;
   width: 100%;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .transactions .more {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .day-group {
@@ -202,7 +202,7 @@ header .qrcode img {
   width: 100%;
 }
 .day-group .date {
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
