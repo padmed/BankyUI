@@ -15,7 +15,7 @@ body {
   min-width: 200px;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 370px auto auto auto;
+  grid-template-rows: 400px auto auto auto;
   gap: 25px;
   color: base.$dark;
   letter-spacing: 3px;
@@ -30,6 +30,16 @@ body {
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+  p {
+    color: base.$blue;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .line {
+    border-bottom: 1px solid rgb(24, 90, 219, 0.5);
+    width: 80%;
+  }
 }
 
 header {
