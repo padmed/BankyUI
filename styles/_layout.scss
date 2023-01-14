@@ -278,3 +278,17 @@ header {
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }
+
+footer > a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+  height: 40px;
+  color: base.$blue;
+  text-decoration: none;
+}
+
+.empty {
+  height: 50px;
+}

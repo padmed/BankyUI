@@ -266,6 +266,20 @@ header .qrcode img {
 @media only screen and (min-width: 480px) {
   /* CSS rules for mobile size go here */
 }
+footer > a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+  height: 40px;
+  color: #185adb;
+  text-decoration: none;
+}
+
+.empty {
+  height: 50px;
+}
+
 .one {
   background-image: url(../img/holiday-illustration.jpg);
 }
