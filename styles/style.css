@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
-.desktop {
-  display: none;
-}
-
 html,
-body {
+body,
+.mobile {
   height: 100%;
 }
 
-body {
+.mobile {
   background-color: #f4f4f4;
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -20,8 +17,10 @@ body {
   color: #0f2c56;
   letter-spacing: 3px;
 }
-
-.top {
+.mobile .desktop {
+  display: none;
+}
+.mobile .top {
   background-color: #fdfcfa;
   display: flex;
   flex-direction: column;
@@ -31,17 +30,16 @@ body {
   border-bottom-right-radius: 13px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
-.top p {
+.mobile .top p {
   color: #185adb;
   font-size: 18px;
   margin-top: 30px;
 }
-.top .line {
+.mobile .top .line {
   border-bottom: 1px solid rgba(24, 90, 219, 0.5);
   width: 80%;
 }
-
-header {
+.mobile header {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -53,42 +51,37 @@ header {
   align-items: center;
   font-size: 13px;
 }
-header h1 {
+.mobile header h1 {
   justify-self: center;
 }
-header .qrcode {
+.mobile header .qrcode {
   justify-self: start;
   margin-left: 3vh;
 }
-header .qrcode img {
+.mobile header .qrcode img {
   width: 25px;
   filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg) brightness(116%) contrast(91%);
 }
-
-.support {
+.mobile .support {
   justify-self: end;
   margin-right: 3vh;
 }
-.support img {
+.mobile .support img {
   width: 25px;
   filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg) brightness(116%) contrast(91%);
 }
-
-.top {
+.mobile .top {
   width: 100%;
 }
-
-.swiper {
+.mobile .swiper {
   width: max(99vw, 260px);
   height: 100%;
 }
-
-.swiper-slide {
+.mobile .swiper-slide {
   display: flex;
   justify-content: center;
 }
-
-.quick-transaction {
+.mobile .quick-transaction {
   border: 2px solid rgba(24, 90, 219, 0.3);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 13px;
@@ -99,13 +92,13 @@ header .qrcode img {
   gap: 20px;
   background-color: #fdfcfa;
 }
-.quick-transaction h3 {
+.mobile .quick-transaction h3 {
   margin: 0;
   justify-self: center;
   margin-top: 10px;
   font-size: 17px;
 }
-.quick-transaction .contact {
+.mobile .quick-transaction .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,15 +108,13 @@ header .qrcode img {
   font-size: 13px;
   width: 70px;
 }
-
-.contacts {
+.mobile .contacts {
   display: flex;
   flex-wrap: wrap;
   margin: 30px;
   gap: 20px;
 }
-
-.deposits {
+.mobile .deposits {
   background-color: #fdfcfa;
   border: 2px solid rgba(24, 90, 219, 0.3);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -133,7 +124,7 @@ header .qrcode img {
   grid-template-rows: 30px 65px 80px;
   align-items: center;
 }
-.deposits h3 {
+.mobile .deposits h3 {
   grid-column: 1/3;
   grid-row: 1/2;
   justify-self: center;
@@ -141,24 +132,24 @@ header .qrcode img {
   margin-top: 10px;
   font-size: 17px;
 }
-.deposits .deposit-type {
+.mobile .deposits .deposit-type {
   align-self: end;
   margin-left: 30px;
   gap: 10px;
   display: flex;
   align-items: center;
 }
-.deposits .deposit-amount {
+.mobile .deposits .deposit-amount {
   justify-self: end;
   margin-right: 20px;
   align-self: end;
 }
-.deposits .deposit-amount,
-.deposits .deposit-type {
+.mobile .deposits .deposit-amount,
+.mobile .deposits .deposit-type {
   font-weight: 400;
   font-size: 18px;
 }
-.deposits .line {
+.mobile .deposits .line {
   border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   margin-top: 25px;
   margin-bottom: 25px;
@@ -166,7 +157,7 @@ header .qrcode img {
   grid-row: 3/4;
   align-self: start;
 }
-.deposits .details {
+.mobile .deposits .details {
   grid-column: 1/3;
   grid-row: 3/4;
   margin-top: 30px;
@@ -174,25 +165,24 @@ header .qrcode img {
   cursor: pointer;
   font-weight: 400;
 }
-
-.transactions {
+.mobile .transactions {
   border: 2px solid rgba(24, 90, 219, 0.3);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 13px;
 }
-.transactions .transactions-header {
+.mobile .transactions .transactions-header {
   display: flex;
 }
-.transactions .transactions-header h3 {
+.mobile .transactions .transactions-header h3 {
   flex: 1;
   text-align: center;
   padding-left: 20px;
 }
-.transactions .transactions-header img {
+.mobile .transactions .transactions-header img {
   width: 20px;
   padding-right: 20px;
 }
-.transactions .line {
+.mobile .transactions .line {
   border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   margin-top: 25px;
   margin-bottom: 25px;
@@ -200,31 +190,29 @@ header .qrcode img {
   margin-top: 25px;
   margin-bottom: 20px;
 }
-.transactions .more {
+.mobile .transactions .more {
   margin-bottom: 20px;
 }
-
-.day-group {
+.mobile .day-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.day-group .date {
+.mobile .day-group .date {
   margin-top: 40px;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 30px;
 }
-.day-group .line-half {
+.mobile .day-group .line-half {
   width: 90%;
   border-bottom: 1px solid rgba(24, 90, 219, 0.5);
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
-.transaction {
+.mobile .transaction {
   width: 90%;
   display: grid;
   grid-auto-flow: column;
@@ -234,24 +222,24 @@ header .qrcode img {
   gap: 10px;
   padding: 10px;
 }
-.transaction .contact {
+.mobile .transaction .contact {
   grid-row: 1/3;
   grid-column: 1/2;
 }
-.transaction .name {
+.mobile .transaction .name {
   align-self: start;
   grid-row: 1/2;
   grid-column: 2/3;
   font-size: min(15px, 3.5vw);
 }
-.transaction .time {
+.mobile .transaction .time {
   align-self: end;
   font-size: 12px;
   grid-row: 2/3;
   grid-column: 2/3;
   font-size: min(12px, 2.5vw);
 }
-.transaction .transfer-type {
+.mobile .transaction .transfer-type {
   grid-column: 3/4;
   grid-row: 1/3;
   font-size: min(12px, 2.5vw);
@@ -260,22 +248,18 @@ header .qrcode img {
   justify-self: start;
   margin-left: 4vw;
 }
-.transaction .amount {
+.mobile .transaction .amount {
   grid-column: 4/5;
   grid-row: 1/3;
   font-size: min(15px, 3.5vw);
   justify-self: end;
 }
-.transaction .contact,
-.transaction .amount,
-.transaction .transfer-type {
+.mobile .transaction .contact,
+.mobile .transaction .amount,
+.mobile .transaction .transfer-type {
   align-self: center;
 }
-
-@media only screen and (min-width: 480px) {
-  /* CSS rules for mobile size go here */
-}
-footer > a {
+.mobile footer > a {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -284,9 +268,86 @@ footer > a {
   color: #185adb;
   text-decoration: none;
 }
-
-.empty {
+.mobile .empty {
   height: 50px;
+}
+
+@media only screen and (min-width: 780px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: grid;
+    grid-template-rows: 70px;
+    letter-spacing: 3px;
+    font-family: "Nunito", sans-serif;
+  }
+  header {
+    background-color: #185adb;
+    color: #fdfcfa;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+    padding-left: 5vw;
+  }
+  .middle {
+    display: flex;
+    justify-content: center;
+  }
+  .search {
+    background-color: white;
+    display: flex;
+    border-radius: 18px;
+    align-items: center;
+    border: 2px solid #ffc947;
+    padding: 3px;
+    width: 90%;
+  }
+  .search input[type=text] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+  }
+  .search img {
+    padding-left: 7px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 8px;
+    font-size: 13px;
+  }
+  .user .profile-photo {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #ffc947;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .notifications-darkMode {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.desktop {
+  display: none;
 }
 
 .one {
@@ -430,4 +491,13 @@ nav ul {
 }
 nav ul li {
   list-style: none;
+}
+
+@media only screen and (min-width: 780px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: grid;
+  }
 }/*# sourceMappingURL=style.css.map */

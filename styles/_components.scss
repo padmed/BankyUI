@@ -1,5 +1,9 @@
 @use "base";
 
+.desktop {
+  display: none;
+}
+
 .one {
   background-image: url(../img/holiday-illustration.jpg);
 }
@@ -141,5 +145,15 @@ nav {
     li {
       list-style: none;
     }
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: grid;
   }
 }
