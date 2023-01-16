@@ -306,10 +306,12 @@ body,
   }
 
   .desktop {
+    height: 100%;
     display: grid;
-    grid-template-rows: 70px;
+    grid-template-rows: 60px;
     letter-spacing: 3px;
     font-family: base.$font-nunito;
+    background-color: base.$background-white;
   }
 
   header {
@@ -323,7 +325,7 @@ body,
 
     h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 25px;
       padding-left: 5vw;
     }
   }
@@ -340,7 +342,8 @@ body,
     border-radius: 18px;
     align-items: center;
     border: 2px solid base.$yellow;
-    padding: 3px;
+    padding: 1px;
+    padding-top: 3px;
     width: 90%;
 
     input[type="text"] {
@@ -361,6 +364,10 @@ body,
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+
+    #notification-opened {
+      display: none;
+    }
   }
 
   .user {
@@ -382,6 +389,73 @@ body,
     width: 25%;
     display: flex;
     align-items: center;
+    gap: 10px;
     justify-content: space-around;
+  }
+
+  .notifications {
+    position: relative;
+    display: block;
+  }
+  .notification-container {
+    color: base.$dark;
+    width: 310px;
+    height: 120px;
+    position: absolute;
+    border: 2px solid base.$blue;
+    border-radius: 10px;
+    top: 45px;
+    box-shadow: 2px 2px 10px rgba(24, 90, 219, 0.5);
+    right: -145px;
+    background-color: base.$white;
+    display: none; //grid added later with JS
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 50% 50%;
+    font-size: 13px;
+
+    img {
+      width: 30px;
+      margin-bottom: 10px;
+    }
+
+    #noti-header {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-left: 15px;
+      margin-top: 8px;
+      color: base.$blue;
+      font-weight: 600;
+    }
+
+    img {
+      width: 12px;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      justify-self: end;
+      margin-right: 15px;
+      margin-top: 7px;
+    }
+  }
+
+  .notification-content {
+    justify-self: center;
+    border-top: 1px solid rgb(24, 90, 219, 0.3);
+    margin-bottom: 10px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #noti-content {
+      font-size: 11px;
+      color: base.$dark;
+    }
+
+    img {
+      width: 20px;
+    }
   }
 }

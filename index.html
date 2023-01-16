@@ -318,7 +318,24 @@
       <div class="right">
         <div class="notifications-darkMode">
           <div class="notifications">
-            <img src="icons/notification.svg" alt="" />
+            <img
+              src="icons/notification.svg"
+              id="notification"
+              alt="notification"
+            />
+            <img
+              src="icons/envelope-open-solid.svg"
+              id="notification-opened"
+              alt="notification open"
+            />
+            <div class="notification-container" id="notification-container">
+              <span id="noti-header">Notifications</span>
+              <img src="icons/xmark-solid.svg" alt="close" />
+              <div class="notification-content">
+                <img src="icons/bell-solid.svg" alt="notification" />
+                <span id="noti-content">You don`t have new notifications</span>
+              </div>
+            </div>
           </div>
           <div class="dark-mode">
             <img src="icons/dark-mode.svg" alt="dark-mode" />
