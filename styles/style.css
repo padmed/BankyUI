@@ -328,9 +328,6 @@ body,
     justify-content: space-around;
     gap: 20px;
   }
-  .right #notification-opened {
-    display: none;
-  }
   .user {
     display: flex;
     align-items: center;
@@ -410,6 +407,17 @@ body,
   }
   .notification-content img {
     width: 20px;
+  }
+  #notification,
+#notification-opened {
+    width: 20px;
+    height: 25px;
+  }
+  .hidden {
+    display: none;
+  }
+  .display {
+    display: block;
   }
 }
 .desktop {

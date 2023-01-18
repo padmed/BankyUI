@@ -364,10 +364,6 @@ body,
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-
-    #notification-opened {
-      display: none;
-    }
   }
 
   .user {
@@ -457,5 +453,18 @@ body,
     img {
       width: 20px;
     }
+  }
+
+  #notification,
+  #notification-opened {
+    width: 20px;
+    height: 25px;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .display {
+    display: block;
   }
 }
