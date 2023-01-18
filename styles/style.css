@@ -330,16 +330,19 @@ body,
     justify-content: space-around;
     gap: 20px;
   }
+  .right img {
+    cursor: pointer;
+  }
   .user {
     display: flex;
     align-items: center;
     margin-right: 20px;
     gap: 8px;
-    font-size: 13px;
+    font-size: 14px;
   }
   .user .profile-photo {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border: 2px solid #ffc947;
     border-radius: 50%;
     background-color: white;
@@ -356,6 +359,7 @@ body,
     display: block;
   }
   .notification-container {
+    display: grid;
     color: #0f2c56;
     width: 310px;
     height: 120px;
@@ -366,7 +370,6 @@ body,
     box-shadow: 2px 2px 10px rgba(24, 90, 219, 0.5);
     right: -145px;
     background-color: #fdfcfa;
-    display: none;
     grid-template-rows: 25% 75%;
     grid-template-columns: 50% 50%;
     font-size: 13px;
@@ -423,6 +426,16 @@ body,
   }
   .display {
     display: block;
+  }
+  .hide {
+    opacity: 0;
+  }
+  .show {
+    opacity: 1;
+    transition: opacity 0.22s linear;
+    -webkit-transition: opacity 0.22s linear;
+    -moz-transition: opacity 0.22s linear;
+    -o-transition: opacity 0.22s linear;
   }
 }
 .desktop {

@@ -46,7 +46,8 @@ function openNotification() {
   envelopeIconOpened.classList.add("display");
   envelopeIconOpened.classList.remove("hidden");
 
-  notificationContainer.style.display = "grid";
+  notificationContainer.classList.add("show");
+  notificationContainer.classList.remove("hide");
 }
 
 function closeNotification() {
@@ -56,7 +57,8 @@ function closeNotification() {
   envelopeIcon.classList.add("display");
   envelopeIcon.classList.remove("hidden");
 
-  notificationContainer.style.display = "none";
+  notificationContainer.classList.add("hide");
+  notificationContainer.classList.remove("show");
 }
 
 notificationSetting.addEventListener("click", (event) => {
