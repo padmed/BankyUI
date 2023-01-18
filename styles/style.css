@@ -410,8 +410,8 @@ body,
   }
   #notification,
 #notification-opened {
-    width: 20px;
-    height: 25px;
+    width: 23px;
+    margin-bottom: 3px;
   }
   .hidden {
     display: none;
