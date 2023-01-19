@@ -468,6 +468,14 @@ body,
     margin-bottom: 3px;
   }
 
+  #notification,
+  #notification-opened,
+  .dark-mode > img {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   #notification-opened {
     margin-bottom: 10px;
   }
