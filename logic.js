@@ -69,5 +69,7 @@ window.addEventListener("click", (event) => {
   } else if (!notificationContainer.contains(event.target)) {
     closeNotification();
     //closes notification dropdown if user clicks anywhere on screen except notifications itself
+  } else if (event.target.id === "noti-close") {
+    closeNotification();
   }
 });
