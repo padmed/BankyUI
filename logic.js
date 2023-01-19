@@ -61,10 +61,13 @@ function closeNotification() {
   notificationContainer.classList.remove("show");
 }
 
-notificationSetting.addEventListener("click", (event) => {
+window.addEventListener("click", (event) => {
   if (event.target === envelopeIcon) {
     openNotification();
   } else if (event.target === envelopeIconOpened) {
     closeNotification();
+  } else if (!notificationContainer.contains(event.target)) {
+    closeNotification();
+    //closes notification dropdown if user clicks anywhere on screen except notifications itself
   }
 });
