@@ -157,3 +157,10 @@ nav {
     display: grid;
   }
 }
+
+.user-options {
+  width: 181px;
+  height: 200px;
+  @include base.desktop-options-border;
+  color: base.$dark;
+}
