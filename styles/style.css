@@ -340,14 +340,6 @@ body,
     gap: 8px;
     position: relative;
   }
-  .user .profile-photo {
-    min-width: 35px;
-    min-height: 35px;
-    border: 2px solid #ffc947;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-  }
   .user svg {
     width: 12px;
     transform: rotate(90deg);
@@ -356,13 +348,20 @@ body,
   .user span {
     min-width: 110px;
   }
+  .user:hover svg {
+    margin-top: 15px;
+  }
+  svg.active {
+    margin-top: 15px;
+  }
   .user-options {
-    top: 70px;
+    top: 100px;
     right: 10px;
     position: fixed;
     padding: 10px;
     visibility: hidden;
     opacity: 0;
+    transition: 0.3s;
   }
   .user-options ul {
     padding: 0;
@@ -637,6 +636,20 @@ nav ul li {
   }
   .desktop {
     display: grid;
+  }
+  .user svg {
+    transition: 0.2s;
+  }
+  .user .profile-photo {
+    min-width: 35px;
+    min-height: 35px;
+    border: 2px solid #ffc947;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("../img/person6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .user-options {
     border: 2px solid #185adb;

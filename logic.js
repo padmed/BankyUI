@@ -81,6 +81,7 @@ const optionToggle = document.querySelectorAll(".optionToggle");
 function hideOptions() {
   options.style.visibility = "hidden";
   options.style.opacity = "0";
+  options.style.top = "100px";
 
   optionToggle[0].classList.remove("active");
   optionToggle[1].classList.remove("active");
@@ -89,6 +90,7 @@ function hideOptions() {
 function showOptions() {
   options.style.visibility = "visible";
   options.style.opacity = "1";
+  options.style.top = "70px";
 
   optionToggle[0].classList.add("active");
   optionToggle[1].classList.add("active");

@@ -157,6 +157,22 @@ nav {
     display: grid;
   }
 
+  .user {
+    svg {
+      transition: 0.2s;
+    }
+
+    .profile-photo {
+      min-width: 35px;
+      min-height: 35px;
+      border: 2px solid base.$yellow;
+      border-radius: 50%;
+      cursor: pointer;
+      background-image: url("../img/person6.png");
+      @include base.contact-image;
+    }
+  }
+
   .user-options {
     @include base.desktop-options-border;
     background-color: base.$white;
