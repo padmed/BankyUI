@@ -434,7 +434,7 @@ body,
   .notification-container {
     display: grid;
     position: absolute;
-    top: 55px;
+    top: 60px;
     right: -200px;
     grid-template-rows: 25% 75%;
     grid-template-columns: 1fr;
@@ -463,6 +463,11 @@ body,
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    &::before {
+      top: -8px;
+      right: 204px;
+    }
 
     #noti-content {
       margin-top: 3px;

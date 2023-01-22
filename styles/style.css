@@ -384,7 +384,7 @@ body,
   .notification-container {
     display: grid;
     position: absolute;
-    top: 55px;
+    top: 60px;
     right: -200px;
     grid-template-rows: 25% 75%;
     grid-template-columns: 1fr;
@@ -410,6 +410,10 @@ body,
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+  .notification-content::before {
+    top: -8px;
+    right: 204px;
   }
   .notification-content #noti-content {
     margin-top: 3px;
@@ -701,6 +705,17 @@ nav ul li {
   .notification-content {
     border-top: 1px solid rgba(24, 90, 219, 0.3);
     width: 90%;
+  }
+  .notification-content::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fdfcfa;
+    border: 2px solid #185adb;
+    position: absolute;
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-right: none;
   }
   .notification-content #noti-content {
     font-size: 11px;

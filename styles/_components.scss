@@ -213,15 +213,7 @@ nav {
     }
 
     &::before {
-      content: "";
-      width: 10px;
-      height: 10px;
-      background-color: base.$white;
-      border: 2px solid base.$blue;
-      position: absolute;
-      transform: rotate(45deg);
-      border-bottom: none;
-      border-right: none;
+      @include base.container-pointer;
     }
 
     h3,
@@ -293,6 +285,10 @@ nav {
   .notification-content {
     border-top: 1px solid rgb(24, 90, 219, 0.3);
     width: 90%;
+
+    &::before {
+      @include base.container-pointer;
+    }
 
     #noti-content {
       font-size: 11px;
