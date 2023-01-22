@@ -310,9 +310,12 @@ nav {
 
   .hide {
     opacity: 0;
+    visibility: hidden;
   }
+
   .show {
     opacity: 1;
+    visibility: visible;
     transition: opacity 0.22s linear;
     -webkit-transition: opacity 0.22s linear;
     -moz-transition: opacity 0.22s linear;
@@ -324,9 +327,21 @@ nav {
     background-color: base.$yellow;
     color: base.$blue;
     font-weight: 600;
+    overflow: hidden;
 
     span {
       cursor: pointer;
+
+      &::before {
+        @include base.container-pointer;
+        background-color: base.$blue;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
     }
   }
 }

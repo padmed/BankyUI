@@ -308,7 +308,7 @@ body,
   .desktop {
     height: 100%;
     display: grid;
-    grid-template-rows: 60px 48px;
+    grid-template-rows: 70px 48px;
     letter-spacing: 3px;
   }
 
@@ -389,6 +389,7 @@ body,
     right: 10px;
     position: fixed;
     padding: 10px;
+    z-index: 2;
 
     ul {
       padding: 0;
@@ -431,6 +432,7 @@ body,
     position: relative;
     display: block;
   }
+
   .notification-container {
     display: grid;
     position: absolute;
@@ -438,6 +440,7 @@ body,
     right: -200px;
     grid-template-rows: 25% 75%;
     grid-template-columns: 1fr;
+    z-index: 1;
 
     img[alt="close"] {
       align-self: center;
@@ -496,5 +499,21 @@ body,
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    span {
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        position: absolute;
+        top: -26px;
+        left: 50%;
+        margin-left: -5px;
+      }
+
+      &:hover::before {
+        top: -23px;
+      }
+    }
   }
 }
