@@ -155,11 +155,36 @@ nav {
 
   .desktop {
     display: grid;
+    font-family: base.$font-nunito;
+    background-color: base.$background-white;
+  }
+
+  header {
+    background-color: base.$blue;
+    color: base.$white;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .search {
+    border-radius: 18px;
+    border: 2px solid base.$yellow;
+    background-color: base.$background-white;
+
+    input[type="text"] {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
   }
 
   .user {
     svg {
       transition: 0.2s;
+      transform: rotate(90deg);
+      cursor: pointer;
     }
 
     .profile-photo {
@@ -176,6 +201,9 @@ nav {
   .user-options {
     @include base.desktop-options-border;
     background-color: base.$white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
 
     svg {
       width: 13px;
@@ -205,12 +233,19 @@ nav {
 
     h4 {
       font-size: 10px;
-      text-align: center;
+    }
+
+    ul {
+      list-style: none;
     }
 
     ul li {
       border-top: 1px solid rgba(24, 90, 219, 0.3);
       font-size: 14px;
+
+      &:hover svg {
+        opacity: 1;
+      }
 
       a {
         text-decoration: none;
@@ -220,10 +255,6 @@ nav {
           color: base.$blue;
         }
       }
-
-      &:hover svg {
-        opacity: 1;
-      }
     }
 
     #privacy svg,
@@ -231,5 +262,64 @@ nav {
       width: 17px;
       padding-right: 2px;
     }
+  }
+
+  .notifivations-darkMode {
+    width: 30%;
+  }
+
+  .notification-container {
+    @include base.desktop-options-border;
+    background-color: base.$white;
+    font-size: 13px;
+    color: base.$dark;
+    width: 310px;
+    height: 130px;
+
+    img[alt="close"] {
+      width: 11px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    #noti-heading {
+      color: base.$blue;
+      font-weight: 600;
+    }
+  }
+
+  .notification-content {
+    border-top: 1px solid rgb(24, 90, 219, 0.3);
+    width: 90%;
+
+    #noti-content {
+      font-size: 11px;
+      color: base.$dark;
+    }
+
+    img {
+      width: 28px;
+    }
+  }
+
+  #notification,
+  #notification-opened,
+  .dark-mode > img {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .hide {
+    opacity: 0;
+  }
+  .show {
+    opacity: 1;
+    transition: opacity 0.22s linear;
+    -webkit-transition: opacity 0.22s linear;
+    -moz-transition: opacity 0.22s linear;
+    -o-transition: opacity 0.22s linear;
   }
 }
