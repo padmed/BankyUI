@@ -33,7 +33,7 @@ window.addEventListener("touchend", (event) => {
   }
 });
 
-//desktop functionalities
+//Desktop notification functionality
 const notificationContainer = document.querySelector("#notification-container");
 const notificationSetting = document.querySelector(".notifications");
 const envelopeIcon = document.querySelector("#notification");
@@ -71,5 +71,37 @@ window.addEventListener("click", (event) => {
     //closes notification dropdown if user clicks anywhere on screen except notifications itself
   } else if (event.target.id === "noti-close") {
     closeNotification();
+  }
+});
+
+//Desktop user options functionality
+const options = document.querySelector(".user-options");
+const optionToggle = document.querySelectorAll(".optionToggle");
+
+function hideOptions() {
+  options.style.visibility = "hidden";
+  options.style.opacity = "0";
+
+  optionToggle[0].classList.remove("active");
+  optionToggle[1].classList.remove("active");
+}
+
+function showOptions() {
+  options.style.visibility = "visible";
+  options.style.opacity = "1";
+
+  optionToggle[0].classList.add("active");
+  optionToggle[1].classList.add("active");
+}
+
+window.addEventListener("click", (event) => {
+  if (event.target === optionToggle[0] || event.target === optionToggle[1]) {
+    if (event.target.classList.contains("active")) {
+      hideOptions();
+    } else {
+      showOptions();
+    }
+  } else {
+    hideOptions();
   }
 });
