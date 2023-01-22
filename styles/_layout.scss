@@ -308,7 +308,7 @@ body,
   .desktop {
     height: 100%;
     display: grid;
-    grid-template-rows: 60px;
+    grid-template-rows: 60px 48px;
     letter-spacing: 3px;
   }
 
@@ -490,5 +490,11 @@ body,
 
   .display {
     display: block;
+  }
+
+  #navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }

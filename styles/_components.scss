@@ -190,7 +190,7 @@ nav {
     .profile-photo {
       min-width: 35px;
       min-height: 35px;
-      border: 2px solid base.$yellow;
+      border: 3px solid base.$yellow;
       border-radius: 50%;
       cursor: pointer;
       background-image: url("../img/person6.png");
@@ -317,5 +317,16 @@ nav {
     -webkit-transition: opacity 0.22s linear;
     -moz-transition: opacity 0.22s linear;
     -o-transition: opacity 0.22s linear;
+  }
+
+  #navigation {
+    width: 100%;
+    background-color: base.$yellow;
+    color: base.$blue;
+    font-weight: 600;
+
+    span {
+      cursor: pointer;
+    }
   }
 }
