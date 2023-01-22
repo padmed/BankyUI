@@ -156,11 +156,64 @@ nav {
   .desktop {
     display: grid;
   }
-}
 
-.user-options {
-  width: 181px;
-  height: 200px;
-  @include base.desktop-options-border;
-  color: base.$dark;
+  .user-options {
+    @include base.desktop-options-border;
+    background-color: base.$white;
+
+    svg {
+      width: 13px;
+      cursor: pointer;
+      opacity: 0.8;
+      padding-right: 5px;
+    }
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: base.$white;
+      border: 2px solid base.$blue;
+      position: absolute;
+      transform: rotate(45deg);
+      border-bottom: none;
+      border-right: none;
+    }
+
+    h3,
+    h4 {
+      text-align: center;
+      color: base.$dark;
+      font-size: 15px;
+    }
+
+    h4 {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    ul li {
+      border-top: 1px solid rgba(24, 90, 219, 0.3);
+      font-size: 14px;
+
+      a {
+        text-decoration: none;
+        color: base.$dark;
+
+        &:hover {
+          color: base.$blue;
+        }
+      }
+
+      &:hover svg {
+        opacity: 1;
+      }
+    }
+
+    #privacy svg,
+    #logout svg {
+      width: 17px;
+      padding-right: 2px;
+    }
+  }
 }
