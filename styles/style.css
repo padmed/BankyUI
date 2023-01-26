@@ -453,7 +453,7 @@ body,
   #navigation span:hover::before {
     top: -23px;
   }
-  .main {
+  .main.wide {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(500px, 0.7fr));
@@ -461,23 +461,10 @@ body,
     gap: 20px;
     margin: 20px;
   }
-  .main > div {
-    border: 2px solid rgba(24, 90, 219, 0.3);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 13px;
-  }
-  .main .right-top {
+  .main.wide .right-top {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: none;
-    box-shadow: none;
-  }
-  .main .right-top > div {
-    height: 50%;
-    border: 2px solid rgba(24, 90, 219, 0.3);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 13px;
   }
 }
 .desktop {
@@ -814,5 +801,20 @@ nav ul li {
   }
   #navigation span:hover::before {
     opacity: 1;
+  }
+  .main.wide > div {
+    border: 2px solid rgba(24, 90, 219, 0.3);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+  }
+  .main.wide .right-top {
+    border: none;
+    box-shadow: none;
+  }
+  .main.wide .right-top > div {
+    height: 50%;
+    border: 2px solid rgba(24, 90, 219, 0.3);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
   }
 }/*# sourceMappingURL=style.css.map */

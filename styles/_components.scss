@@ -344,4 +344,20 @@ nav {
       }
     }
   }
+
+  .main.wide {
+    & > div {
+      @include base.border-style;
+    }
+
+    .right-top {
+      border: none;
+      box-shadow: none;
+
+      & > div {
+        height: 50%;
+        @include base.border-style;
+      }
+    }
+  }
 }
