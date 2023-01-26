@@ -531,5 +531,42 @@ body,
       flex-direction: column;
       gap: 20px;
     }
+
+    h3 {
+      margin: 0;
+      padding: 15px 20px;
+    }
+
+    .info-header {
+      margin-top: 25px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      &:last-child,
+      &:first-child {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      li {
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .main.wide {
+    .card-info .info-header {
+      margin-top: 35px;
+    }
+
+    .deposits .info-header {
+      margin-top: none;
+      margin-top: 10px;
+    }
+  }
+
+  .card-info span {
+    padding: 0px 20px;
   }
 }

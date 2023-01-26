@@ -466,6 +466,33 @@ body,
     flex-direction: column;
     gap: 20px;
   }
+  .main.wide h3 {
+    margin: 0;
+    padding: 15px 20px;
+  }
+  .main.wide .info-header {
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main.wide .info-header:last-child, .main.wide .info-header:first-child {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .main.wide .info-header li {
+    padding-bottom: 5px;
+  }
+  .main.wide .card-info .info-header {
+    margin-top: 35px;
+  }
+  .main.wide .deposits .info-header {
+    margin-top: none;
+    margin-top: 10px;
+  }
+  .card-info span {
+    padding: 0px 20px;
+  }
 }
 .desktop {
   display: none;
@@ -816,5 +843,18 @@ nav ul li {
     border: 2px solid rgba(24, 90, 219, 0.3);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 13px;
+  }
+  .main.wide h3 {
+    color: #0f2c56;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .card-info > span {
+    font-weight: 600;
+  }
+  .info-header {
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+    list-style: none;
+    font-size: 11px;
   }
 }/*# sourceMappingURL=style.css.map */
