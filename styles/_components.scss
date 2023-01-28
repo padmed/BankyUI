@@ -352,6 +352,13 @@ nav {
       @include base.border-style;
     }
 
+    .card-info,
+    .deposits,
+    .contacts,
+    .recent-transactions,
+    .exchange-rates {
+      background-color: base.$white;
+    }
     .right-top {
       border: none;
       box-shadow: none;
