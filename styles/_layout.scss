@@ -521,10 +521,10 @@ body,
   .main.wide {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 0.7fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 0.7fr));
     grid-auto-rows: 435px;
     gap: 30px;
-    margin: 20px;
+    margin: 20px 100px;
 
     .right-top {
       display: flex;
@@ -567,11 +567,11 @@ body,
   }
 
   .card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 23px;
-    margin: 0;
+    @include base.content-layout;
+  }
+
+  .deposit-content {
+    @include base.content-layout;
   }
 
   .show-all {

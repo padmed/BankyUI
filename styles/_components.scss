@@ -348,9 +348,6 @@ nav {
   .main.wide {
     color: base.$dark;
     // letter-spacing: 1px;
-    & > div {
-      @include base.border-style;
-    }
 
     .card-info,
     .deposits,
@@ -358,6 +355,7 @@ nav {
     .recent-transactions,
     .exchange-rates {
       background-color: base.$white;
+      @include base.border-style(rgba(24, 90, 219, 0.6));
     }
     .right-top {
       border: none;
@@ -365,9 +363,9 @@ nav {
 
       & > div {
         height: 50%;
-        @include base.border-style;
       }
     }
+
     h3 {
       color: base.$dark;
       font-size: 15px;
@@ -416,11 +414,21 @@ nav {
     }
 
     &:hover img {
-      transform: translateX(10px);
+      transform: translateX(7px);
     }
 
     &:active img {
       transform: none;
+    }
+  }
+
+  .deposit-content {
+    @include base.content-style;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
   }
 }

@@ -456,10 +456,10 @@ body,
   .main.wide {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 0.7fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 0.7fr));
     grid-auto-rows: 435px;
     gap: 30px;
-    margin: 20px;
+    margin: 20px 100px;
   }
   .main.wide .right-top {
     display: flex;
@@ -491,6 +491,13 @@ body,
     padding: 0px 20px;
   }
   .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 23px;
+    margin: 0;
+  }
+  .deposit-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -847,17 +854,15 @@ nav ul li {
   .main.wide {
     color: #0f2c56;
   }
-  .main.wide > div {
-    border: 2px solid rgba(24, 90, 219, 0.3);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 13px;
-  }
   .main.wide .card-info,
 .main.wide .deposits,
 .main.wide .contacts,
 .main.wide .recent-transactions,
 .main.wide .exchange-rates {
     background-color: #fdfcfa;
+    border: 2px solid rgba(24, 90, 219, 0.6);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
   }
   .main.wide .right-top {
     border: none;
@@ -865,9 +870,6 @@ nav ul li {
   }
   .main.wide .right-top > div {
     height: 50%;
-    border: 2px solid rgba(24, 90, 219, 0.3);
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 13px;
   }
   .main.wide h3 {
     color: #0f2c56;
@@ -912,9 +914,18 @@ nav ul li {
     transition: 0.3s;
   }
   .show-all:hover img {
-    transform: translateX(10px);
+    transform: translateX(7px);
   }
   .show-all:active img {
     transform: none;
+  }
+  .deposit-content {
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+    list-style: none;
+  }
+  .deposit-content li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
