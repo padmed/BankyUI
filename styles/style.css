@@ -458,7 +458,7 @@ body,
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(500px, 0.7fr));
     grid-auto-rows: 435px;
-    gap: 40px;
+    gap: 30px;
     margin: 20px;
   }
   .main.wide .right-top {
@@ -905,6 +905,7 @@ nav ul li {
     color: #185adb;
     cursor: pointer;
     transition: 1s;
+    font-weight: 600;
   }
   .show-all img {
     width: 10px;
@@ -912,5 +913,8 @@ nav ul li {
   }
   .show-all:hover img {
     transform: translateX(10px);
+  }
+  .show-all:active img {
+    transform: none;
   }
 }/*# sourceMappingURL=style.css.map */

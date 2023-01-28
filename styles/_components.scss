@@ -408,6 +408,7 @@ nav {
     color: base.$blue;
     cursor: pointer;
     transition: 1s;
+    font-weight: 600;
 
     img {
       width: 10px;
@@ -416,6 +417,10 @@ nav {
 
     &:hover img {
       transform: translateX(10px);
+    }
+
+    &:active img {
+      transform: none;
     }
   }
 }
