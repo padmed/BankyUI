@@ -347,6 +347,7 @@ nav {
 
   .main.wide {
     color: base.$dark;
+    // letter-spacing: 1px;
     & > div {
       @include base.border-style;
     }
@@ -379,10 +380,10 @@ nav {
   .card-content {
     @include base.content-style;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
     .card-image {
-      width: 70px;
-      height: 50px;
+      width: 60px;
+      height: 40px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -392,6 +393,22 @@ nav {
 
     :nth-child(2) {
       margin-left: 10px;
+    }
+  }
+
+  .show-all {
+    font-size: 13px;
+    color: base.$blue;
+    cursor: pointer;
+    transition: 1s;
+
+    img {
+      width: 10px;
+      transition: 0.3s;
+    }
+
+    &:hover img {
+      transform: translateX(10px);
     }
   }
 }
