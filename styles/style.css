@@ -545,12 +545,12 @@ body,
     text-align: center;
     margin-top: 10px;
   }
-  .contacts-content {
+  .contacts.desktop .contacts-content {
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     padding-right: 0;
     display: flex;
-    gap: 0.3vw;
+    gap: 1px;
   }
 }
 .desktop {
