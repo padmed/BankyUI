@@ -459,4 +459,22 @@ nav {
       }
     }
   }
+
+  .transaction-content {
+    @include base.content-style;
+    font-size: 14px;
+    font-weight: 600;
+
+    :first-child {
+      :first-child,
+      :last-child {
+        font-size: 10px;
+        font-weight: 400;
+      }
+
+      :nth-child(2) {
+        font-size: 14px;
+      }
+    }
+  }
 }

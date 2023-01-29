@@ -631,4 +631,20 @@ body,
       gap: 1px;
     }
   }
+
+  .recent-transactions {
+    .info-header {
+      padding: 0px 30px;
+    }
+  }
+  .transaction-content {
+    @include base.content-layout;
+
+    :first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  }
 }

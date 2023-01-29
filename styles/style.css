@@ -552,6 +552,22 @@ body,
     display: flex;
     gap: 1px;
   }
+  .recent-transactions .info-header {
+    padding: 0px 30px;
+  }
+  .transaction-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 23px;
+    margin: 0;
+  }
+  .transaction-content :first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
 }
 .desktop {
   display: none;
@@ -985,5 +1001,19 @@ nav ul li {
   }
   .contacts.desktop .contact.add img {
     width: 60px;
+  }
+  .transaction-content {
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .transaction-content :first-child :first-child,
+.transaction-content :first-child :last-child {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .transaction-content :first-child :nth-child(2) {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
