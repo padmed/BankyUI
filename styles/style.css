@@ -539,7 +539,7 @@ body,
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: scale(0.9);
+    padding: 5px;
   }
   .contacts.desktop .contact span {
     text-align: center;
@@ -549,7 +549,7 @@ body,
     margin: 0;
     padding: 20px 20px;
     display: flex;
-    gap: 15px;
+    gap: 0.3vw;
   }
 }
 .desktop {
@@ -965,6 +965,16 @@ nav ul li {
   }
   .contacts.desktop span {
     font-size: 12px;
+  }
+  .contacts.desktop .contact {
+    transform: scale(0.9);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  .contacts.desktop .contact:hover {
+    border: 1px solid #185adb;
+    background-color: #f4f4f4;
   }
   .contacts.desktop .contact.add img {
     width: 60px;

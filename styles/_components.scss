@@ -436,6 +436,18 @@ nav {
       font-size: 12px;
     }
 
+    .contact {
+      transform: scale(0.9);
+      border-radius: 8px;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid base.$blue;
+        background-color: base.$background-white;
+      }
+    }
+
     .contact.add {
       img {
         width: 60px;

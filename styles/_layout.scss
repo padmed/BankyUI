@@ -616,7 +616,7 @@ body,
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: scale(0.9);
+      padding: 5px;
 
       span {
         text-align: center;
@@ -628,7 +628,6 @@ body,
     margin: 0;
     padding: 20px 20px;
     display: flex;
-    gap: 15px;
-    // border: 1px solid;
+    gap: 0.3vw;
   }
 }
