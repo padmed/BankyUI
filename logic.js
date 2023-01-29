@@ -14,7 +14,6 @@ var swiper = new Swiper(".swiper", {
 
 // Hover effect on contact buttons for mobile design
 window.addEventListener("touchstart", (event) => {
-  console.log(event.target.classList);
   if (
     event.target.classList.contains("photo-placeholder") ||
     event.target.classList.contains("add-contact")
@@ -24,7 +23,6 @@ window.addEventListener("touchstart", (event) => {
 });
 
 window.addEventListener("touchend", (event) => {
-  console.log(event.target.classList);
   if (
     event.target.classList.contains("photo-placeholder") ||
     event.target.classList.contains("add-contact")
