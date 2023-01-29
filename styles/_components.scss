@@ -424,11 +424,22 @@ nav {
 
   .deposit-content {
     @include base.content-style;
+    font-weight: 600;
+  }
 
-    li {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+  .contacts.desktop {
+    .contacts-content {
+      list-style: none;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    .contact.add {
+      img {
+        width: 60px;
+      }
     }
   }
 }
