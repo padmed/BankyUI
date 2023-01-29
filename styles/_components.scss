@@ -441,10 +441,15 @@ nav {
       border-radius: 8px;
       border: 1px solid transparent;
       cursor: pointer;
+      height: fit-content;
 
       &:hover {
         border: 1px solid base.$blue;
         background-color: base.$background-white;
+      }
+
+      &:active {
+        transform: scale(0.85);
       }
     }
 
