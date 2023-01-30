@@ -131,52 +131,45 @@ body,
   .deposits {
     background-color: base.$white;
     @include base.border-style;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 65px 80px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    position: relative;
 
-    h3 {
-      grid-column: 1/3;
-      grid-row: 1/2;
-      justify-self: center;
-      margin: 0;
-      margin-top: 10px;
-      font-size: 17px;
-    }
     .deposit-type {
-      align-self: end;
-      margin-left: 30px;
-      gap: 10px;
+      padding: 0;
+      width: 90%;
       display: flex;
-      align-items: center;
-    }
-    .deposit-amount {
-      justify-self: end;
-      margin-right: 20px;
-      align-self: end;
-    }
+      justify-content: space-between;
+      position: relative;
+      #first-deposit::after {
+        content: "";
+        border-bottom: 1px solid rgba(24, 90, 219, 0.4);
+        width: 100%;
+        position: absolute;
+        bottom: -15px;
+      }
 
-    .deposit-amount,
-    .deposit-type {
-      font-weight: 400;
-      font-size: 18px;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
     }
-
-    .line {
-      @include base.line;
-      grid-column: 1/3;
-      grid-row: 3/4;
-      align-self: start;
+    .deposit-type img {
+      width: 40px;
     }
 
     .details {
-      grid-column: 1/3;
-      grid-row: 3/4;
-      margin-top: 30px;
-      justify-self: center;
-      cursor: pointer;
-      font-weight: 400;
+      padding: 20px 0px;
+    }
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+      position: absolute;
+      width: 100%;
+      bottom: 55px;
     }
   }
 
