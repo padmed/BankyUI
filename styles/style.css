@@ -483,10 +483,6 @@ body,
   .main.wide .card-info .info-header {
     margin-top: 35px;
   }
-  .main.wide .deposits .info-header {
-    margin-top: none;
-    margin-top: 10px;
-  }
   .card-info span {
     padding: 0px 20px;
   }
@@ -516,10 +512,19 @@ body,
   .show-all span {
     padding: 0;
   }
-  .deposit-content li {
+  .deposit-content {
+    padding: 13px;
+  }
+  .deposit-content :first-child,
+.deposit-content li {
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-left: 5px;
+  }
+  .deposit-content :first-child img,
+.deposit-content li img {
+    width: 30px;
   }
   .deposits .show-all {
     margin-top: 0;
@@ -552,8 +557,8 @@ body,
     display: flex;
     gap: 1px;
   }
-  .recent-transactions .info-header {
-    padding: 0px 30px;
+  .recent-transactions .info-header.transac {
+    padding: 0px 20px 0px 53px;
   }
   .transaction-content {
     display: flex;
@@ -913,7 +918,7 @@ nav ul li {
 .main.wide .recent-transactions,
 .main.wide .exchange-rates {
     background-color: #fdfcfa;
-    border: 2px solid rgba(24, 90, 219, 0.6);
+    border: 2px solid rgba(24, 90, 219, 0.4);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 13px;
   }
@@ -935,6 +940,7 @@ nav ul li {
   .info-header {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
     list-style: none;
+    color: #185adb;
     font-size: 11px;
   }
   .card-content {
@@ -1001,6 +1007,9 @@ nav ul li {
   }
   .contacts.desktop .contact.add img {
     width: 60px;
+  }
+  .deposit-content {
+    font-size: 13px;
   }
   .transaction-content {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);

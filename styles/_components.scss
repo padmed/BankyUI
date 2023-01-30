@@ -355,7 +355,7 @@ nav {
     .recent-transactions,
     .exchange-rates {
       background-color: base.$white;
-      @include base.border-style(rgba(24, 90, 219, 0.6));
+      @include base.border-style(rgba(24, 90, 219, 0.4));
     }
     .right-top {
       border: none;
@@ -379,6 +379,7 @@ nav {
 
   .info-header {
     @include base.content-style;
+    color: base.$blue;
     font-size: 11px;
   }
 
@@ -458,6 +459,10 @@ nav {
         width: 60px;
       }
     }
+  }
+
+  .deposit-content {
+    font-size: 13px;
   }
 
   .transaction-content {

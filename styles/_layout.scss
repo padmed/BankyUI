@@ -554,11 +554,6 @@ body,
     .card-info .info-header {
       margin-top: 35px;
     }
-
-    .deposits .info-header {
-      margin-top: none;
-      margin-top: 10px;
-    }
   }
 
   //total balance
@@ -589,10 +584,17 @@ body,
   }
 
   .deposit-content {
+    padding: 13px;
+    :first-child,
     li {
       display: flex;
       align-items: center;
       gap: 15px;
+      padding-left: 5px;
+
+      img {
+        width: 30px;
+      }
     }
   }
 
@@ -633,8 +635,8 @@ body,
   }
 
   .recent-transactions {
-    .info-header {
-      padding: 0px 30px;
+    .info-header.transac {
+      padding: 0px 20px 0px 53px;
     }
   }
   .transaction-content {
