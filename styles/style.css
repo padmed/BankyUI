@@ -504,7 +504,7 @@ body,
     padding: 0;
   }
   .deposit-content {
-    padding: 9px 13px 13px 13px;
+    padding: 9px 16px 13px 11px;
   }
   .deposit-content :first-child,
 .deposit-content li {
@@ -557,6 +557,7 @@ body,
     align-items: center;
     padding: 20px 23px;
     margin: 0;
+    padding: 12px 20px 12px 25px;
   }
   .transaction-content :first-child {
     display: flex;
@@ -1005,15 +1006,15 @@ nav ul li {
   .transaction-content {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
     list-style: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
   }
   .transaction-content :first-child :first-child,
 .transaction-content :first-child :last-child {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 400;
   }
   .transaction-content :first-child :nth-child(2) {
-    font-size: 14px;
+    font-size: 13px;
   }
 }/*# sourceMappingURL=style.css.map */

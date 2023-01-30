@@ -577,7 +577,7 @@ body,
   }
 
   .deposit-content {
-    padding: 9px 13px 13px 13px;
+    padding: 9px 16px 13px 11px;
     :first-child,
     li {
       display: flex;
@@ -634,6 +634,7 @@ body,
   }
   .transaction-content {
     @include base.content-layout;
+    padding: 12px 20px 12px 25px;
 
     :first-child {
       display: flex;
