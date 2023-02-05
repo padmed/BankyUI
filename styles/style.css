@@ -548,22 +548,48 @@ body,
     display: flex;
     gap: 1px;
   }
-  .recent-transactions .info-header.transac {
-    padding: 0px 20px 0px 53px;
-  }
   .transaction-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 23px;
     margin: 0;
-    padding: 12px 20px 12px 25px;
+    padding: 10px 22px;
+    display: grid;
+    grid-template-columns: -webkit-min-content 1fr 1fr -webkit-min-content;
+    grid-template-columns: min-content 1fr 1fr min-content;
+    grid-template-rows: repeat(3, -webkit-fit-content);
+    grid-template-rows: repeat(3, fit-content);
+    grid-auto-flow: row;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 0px;
+    position: relative;
+    grid-template-areas: "photo date amount more" "photo contact_name amount more" "photo time amount more";
   }
-  .transaction-content :first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+  .transaction-content .contact {
+    grid-area: photo;
+  }
+  .transaction-content .time {
+    grid-area: time;
+  }
+  .transaction-content .date {
+    grid-area: date;
+  }
+  .transaction-content .name {
+    grid-area: contact_name;
+  }
+  .transaction-content .amount {
+    grid-area: amount;
+    align-self: center;
+    margin-left: auto;
+  }
+  .transaction-content .more {
+    grid-area: more;
+    align-self: center;
+    margin-left: auto;
+    margin-top: 2px;
+  }
+  .transaction-content::after {
+    position: absolute;
+    bottom: 0;
+    left: 24px;
   }
 }
 .desktop {
@@ -1004,17 +1030,34 @@ nav ul li {
     font-size: 13px;
   }
   .transaction-content {
-    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
     list-style: none;
-    font-size: 13px;
-    font-weight: 600;
+    cursor: pointer;
   }
-  .transaction-content :first-child :first-child,
-.transaction-content :first-child :last-child {
-    font-size: 9px;
-    font-weight: 400;
+  .transaction-content:hover {
+    background-color: #f4f4f4;
   }
-  .transaction-content :first-child :nth-child(2) {
-    font-size: 13px;
+  .transaction-content .contact > div {
+    width: 45px;
+    height: 45px;
+  }
+  .transaction-content .date,
+.transaction-content .time {
+    font-size: 10px;
+  }
+  .transaction-content .name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .transaction-content .more > img {
+    width: 5px;
+  }
+  .transaction-content .amount {
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .transaction-content::after {
+    content: "";
+    width: 92%;
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
 }/*# sourceMappingURL=style.css.map */
