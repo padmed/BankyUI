@@ -550,7 +550,7 @@ body,
   }
   .transaction-content {
     margin: 0;
-    padding: 10px 22px;
+    padding: 10px 30px;
     display: grid;
     grid-template-columns: -webkit-min-content 1fr 1fr -webkit-min-content;
     grid-template-columns: min-content 1fr 1fr min-content;
@@ -590,6 +590,9 @@ body,
     position: absolute;
     bottom: 0;
     left: 24px;
+  }
+  .recent-transactions #transaction-header {
+    padding-bottom: 30px;
   }
 }
 .desktop {
@@ -1049,7 +1052,7 @@ nav ul li {
     font-weight: 500;
   }
   .transaction-content .more > img {
-    width: 5px;
+    width: 4px;
   }
   .transaction-content .amount {
     font-size: 17px;
@@ -1058,6 +1061,14 @@ nav ul li {
   .transaction-content::after {
     content: "";
     width: 92%;
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+  }
+  .recent-transactions {
+    height: 450px;
+  }
+  .recent-transactions ul:last-of-type::after {
+    width: 100%;
+    left: 0;
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
 }/*# sourceMappingURL=style.css.map */

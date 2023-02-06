@@ -489,7 +489,7 @@ nav {
     }
 
     .more > img {
-      width: 5px;
+      width: 4px;
     }
 
     .amount {
@@ -501,6 +501,17 @@ nav {
       content: "";
       width: 92%;
       border-bottom: 1px solid base.$light-border-blue;
+    }
+  }
+
+  .recent-transactions {
+    height: 450px;
+    ul:last-of-type {
+      &::after {
+        width: 100%;
+        left: 0;
+        border-bottom: 1px solid base.$light-border-blue;
+      }
     }
   }
 }
