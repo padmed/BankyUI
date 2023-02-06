@@ -669,6 +669,9 @@ body,
       align-self: center;
       margin-left: auto;
       margin-top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &::after {

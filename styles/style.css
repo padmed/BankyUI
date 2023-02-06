@@ -585,6 +585,9 @@ body,
     align-self: center;
     margin-left: auto;
     margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .transaction-content::after {
     position: absolute;
@@ -1051,11 +1054,31 @@ nav ul li {
     font-size: 14px;
     font-weight: 500;
   }
+  .transaction-content .more {
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    position: relative;
+  }
+  .transaction-content .more::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.2s ease;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+  }
+  .transaction-content .more:hover::before {
+    background-color: #c6c6c6;
+    transform: scale(1);
+  }
   .transaction-content .more > img {
     width: 4px;
   }
   .transaction-content .amount {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 800;
   }
   .transaction-content::after {
