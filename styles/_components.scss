@@ -491,8 +491,7 @@ nav {
     .more {
       width: 28px;
       height: 28px;
-      z-index: 1;
-      position: relative;
+      z-index: 0;
 
       &::before {
         content: "";
@@ -518,6 +517,26 @@ nav {
     .more.active {
       img {
         transform: rotate(90deg);
+      }
+    }
+
+    .more-options {
+      border: 2px solid base.$blue;
+      background-color: base.$white;
+      font-size: 15px;
+      width: 140px;
+      height: 70px;
+      letter-spacing: 0px;
+      border-radius: 5px;
+
+      span:first-of-type:before {
+        content: "";
+        width: 87%;
+        border-bottom: 1px solid base.$light-border-blue;
+      }
+
+      &::before {
+        @include base.container-pointer;
       }
     }
 
