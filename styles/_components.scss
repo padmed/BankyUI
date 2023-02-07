@@ -515,6 +515,12 @@ nav {
       width: 4px;
     }
 
+    .more.active {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+
     .amount {
       font-size: 15px;
       font-weight: 800;

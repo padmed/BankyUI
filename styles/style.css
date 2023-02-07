@@ -1077,6 +1077,9 @@ nav ul li {
   .transaction-content .more > img {
     width: 4px;
   }
+  .transaction-content .more.active img {
+    transform: rotate(90deg);
+  }
   .transaction-content .amount {
     font-size: 15px;
     font-weight: 800;

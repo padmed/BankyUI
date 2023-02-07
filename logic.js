@@ -73,6 +73,7 @@ window.addEventListener("click", (event) => {
 });
 
 //Desktop user options functionality
+
 const options = document.querySelector(".user-options");
 const optionToggle = document.querySelectorAll(".optionToggle");
 
@@ -103,5 +104,24 @@ window.addEventListener("click", (event) => {
     }
   } else {
     hideOptions();
+  }
+});
+
+//"more" functionality in recent transactions
+const recentTransactions = document.querySelector(".recent-transactions");
+const moreOptionTriggers = document.querySelectorAll(
+  '[data-moreOptions="more"]'
+);
+
+recentTransactions.addEventListener("click", (event) => {
+  if (Array.from(moreOptionTriggers).includes(event.target)) {
+    let trigger = event.target;
+
+    if (event.target.tagName === "IMG") {
+      trigger = event.target.parentNode;
+    }
+
+    moreOptionTriggers.forEach((each) => each.classList.remove("active"));
+    trigger.classList.add("active");
   }
 });
