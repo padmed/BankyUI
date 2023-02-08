@@ -108,20 +108,39 @@ window.addEventListener("click", (event) => {
 });
 
 //"more" functionality in recent transactions
-const recentTransactions = document.querySelector(".recent-transactions");
-const moreOptionTriggers = document.querySelectorAll(
+const dropDowns = document.querySelectorAll(".more-dropdown");
+const moreDropDownTriggers = document.querySelectorAll(
   '[data-moreOptions="more"]'
 );
 
-recentTransactions.addEventListener("click", (event) => {
-  if (Array.from(moreOptionTriggers).includes(event.target)) {
-    let trigger = event.target;
+function hideMoreDropdowns() {
+  moreDropDownTriggers.forEach((each) => each.classList.remove("active"));
+  dropDowns.forEach((each) => each.classList.remove("more-dropdown-active"));
+}
 
+function showMoreDropdown(target) {
+  const dropDown = document.querySelector(
+    `div[data-dropdown= ${target.getAttribute("data-dropdown")}]`
+  );
+
+  target.classList.add("active");
+  dropDown.classList.add("more-dropdown-active");
+}
+
+window.addEventListener("click", (event) => {
+  if (Array.from(moreDropDownTriggers).includes(event.target)) {
+    let trigger = event.target;
     if (event.target.tagName === "IMG") {
       trigger = event.target.parentNode;
     }
 
-    moreOptionTriggers.forEach((each) => each.classList.remove("active"));
-    trigger.classList.add("active");
+    if (trigger.classList.contains("active")) {
+      hideMoreDropdowns();
+    } else {
+      hideMoreDropdowns();
+      showMoreDropdown(trigger);
+    }
+  } else {
+    hideMoreDropdowns();
   }
 });

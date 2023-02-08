@@ -676,9 +676,10 @@ body,
       position: relative;
     }
 
-    .more-options {
+    .more-dropdown {
+      transition: 0.2s;
       position: absolute;
-      bottom: -60px;
+      bottom: -20px;
       right: 15px;
       z-index: 3;
       display: flex;
@@ -708,6 +709,9 @@ body,
       }
     }
 
+    .more-dropdown.more-dropdown-active {
+      bottom: -64px;
+    }
     &::after {
       position: absolute;
       bottom: 0;

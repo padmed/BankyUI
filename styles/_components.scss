@@ -466,6 +466,7 @@ nav {
   }
 
   .transaction-content {
+    white-space: nowrap;
     list-style: none;
     cursor: pointer;
 
@@ -512,6 +513,7 @@ nav {
 
     .more > img {
       width: 4px;
+      transition: 0.2s;
     }
 
     .more.active {
@@ -520,14 +522,16 @@ nav {
       }
     }
 
-    .more-options {
+    .more-dropdown {
       border: 2px solid base.$blue;
       background-color: base.$white;
-      font-size: 15px;
-      width: 140px;
-      height: 70px;
+      font-size: 0px;
+      width: 70px;
+      height: 35px;
       letter-spacing: 0px;
       border-radius: 5px;
+      visibility: hidden;
+      opacity: 0;
 
       span:first-of-type:before {
         content: "";
@@ -552,7 +556,16 @@ nav {
     }
   }
 
+  .more-dropdown.more-dropdown-active {
+    visibility: visible;
+    opacity: 1;
+    width: 140px;
+    height: 70px;
+    font-size: 15px;
+  }
+
   .recent-transactions {
+    user-select: none;
     height: 450px;
     ul:last-of-type {
       &::after {
