@@ -380,7 +380,7 @@ body,
     grid-template-columns: 1fr;
     z-index: 1;
     top: 0px;
-    right: 40px;
+    right: 0px;
   }
   .notification-container img[alt=close] {
     align-self: center;
@@ -884,8 +884,9 @@ nav ul li {
     background-color: #fdfcfa;
     font-size: 0px;
     color: #0f2c56;
-    width: 0px;
-    height: 0px;
+    width: 10px;
+    height: 10px;
+    transition: 0.2s;
   }
   .notification-container img[alt=close] {
     width: 11px;
@@ -900,6 +901,8 @@ nav ul li {
   .notification-content {
     border-top: 1px solid rgba(24, 90, 219, 0.3);
     width: 90%;
+    opacity: 0;
+    visibility: hidden;
   }
   .notification-content::before {
     content: "";
@@ -911,6 +914,8 @@ nav ul li {
     transform: rotate(45deg);
     border-bottom: none;
     border-right: none;
+    opacity: 0;
+    visibility: hidden;
   }
   .notification-content #noti-content {
     font-size: 11px;
@@ -931,10 +936,14 @@ nav ul li {
   .show {
     opacity: 1;
     visibility: visible;
-    transition: 0.3s;
     width: 310px;
     height: 130px;
     font-size: 13px;
+  }
+  .show .notification-content,
+  .show .notification-content::before {
+    opacity: 1;
+    visibility: visible;
   }
   #navigation {
     width: 100%;

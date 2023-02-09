@@ -265,8 +265,9 @@ nav {
     background-color: base.$white;
     font-size: 0px;
     color: base.$dark;
-    width: 0px;
-    height: 0px;
+    width: 10px;
+    height: 10px;
+    transition: 0.2s;
 
     img[alt="close"] {
       width: 11px;
@@ -285,9 +286,13 @@ nav {
   .notification-content {
     border-top: 1px solid rgb(24, 90, 219, 0.3);
     width: 90%;
+    opacity: 0;
+    visibility: hidden;
 
     &::before {
       @include base.container-pointer;
+      opacity: 0;
+      visibility: hidden;
     }
 
     #noti-content {
@@ -316,10 +321,15 @@ nav {
   .show {
     opacity: 1;
     visibility: visible;
-    transition: 0.3s;
     width: 310px;
     height: 130px;
     font-size: 13px;
+
+    .notification-content,
+    .notification-content::before {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   #navigation {
