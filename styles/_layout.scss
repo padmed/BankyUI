@@ -430,16 +430,15 @@ body,
   .notification-container {
     display: grid;
     position: absolute;
-    top: 60px;
-    right: -200px;
     grid-template-rows: 25% 75%;
     grid-template-columns: 1fr;
     z-index: 1;
+    top: 0px;
+    right: 40px;
 
     img[alt="close"] {
       align-self: center;
       margin-right: 20px;
-      margin-top: 3px;
     }
 
     #noti-heading {
@@ -448,6 +447,11 @@ body,
       margin-top: 3px;
       margin-left: 25px;
     }
+  }
+
+  .notification-container.show {
+    top: 50px;
+    right: -200px;
   }
 
   .notification-content {

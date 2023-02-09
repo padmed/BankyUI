@@ -263,10 +263,10 @@ nav {
   .notification-container {
     @include base.desktop-options-border;
     background-color: base.$white;
-    font-size: 13px;
+    font-size: 0px;
     color: base.$dark;
-    width: 310px;
-    height: 130px;
+    width: 0px;
+    height: 0px;
 
     img[alt="close"] {
       width: 11px;
@@ -316,10 +316,10 @@ nav {
   .show {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.22s linear;
-    -webkit-transition: opacity 0.22s linear;
-    -moz-transition: opacity 0.22s linear;
-    -o-transition: opacity 0.22s linear;
+    transition: 0.3s;
+    width: 310px;
+    height: 130px;
+    font-size: 13px;
   }
 
   #navigation {
