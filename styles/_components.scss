@@ -203,8 +203,28 @@ nav {
     background-color: base.$white;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
+    width: 0px;
+    height: 0px;
+    font-size: 0;
 
+    * {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  .user-options.shown {
+    opacity: 1;
+    visibility: visible;
+    width: 130px;
+    height: 160px;
+
+    * {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s;
+    }
     svg {
       width: 13px;
       cursor: pointer;

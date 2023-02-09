@@ -357,6 +357,7 @@ body,
   .right {
     position: relative;
   }
+
   .user {
     display: flex;
     align-items: center;
@@ -382,8 +383,8 @@ body,
   }
 
   .user-options {
-    top: 100px;
-    right: 10px;
+    top: 20px;
+    right: 50px;
     position: absolute;
     padding: 10px;
     z-index: 2;
@@ -414,6 +415,11 @@ body,
       top: -7px;
       right: 50px;
     }
+  }
+
+  .user-options.shown {
+    top: 54px;
+    right: 10px;
   }
 
   .notifications-darkMode {

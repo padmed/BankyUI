@@ -31,7 +31,7 @@ window.addEventListener("touchend", (event) => {
   }
 });
 
-//Desktop notification functionality
+//Desktop notification dropdown functionality
 const notificationContainer = document.querySelector("#notification-container");
 const notificationSetting = document.querySelector(".notifications");
 const envelopeIcon = document.querySelector("#notification");
@@ -72,24 +72,19 @@ window.addEventListener("click", (event) => {
   }
 });
 
-//Desktop user options functionality
-
+//Desktop user options dropdown functionality
 const options = document.querySelector(".user-options");
 const optionToggle = document.querySelectorAll(".optionToggle");
 
 function hideOptions() {
-  options.style.visibility = "hidden";
-  options.style.opacity = "0";
-  options.style.top = "100px";
+  options.classList.remove("shown");
 
   optionToggle[0].classList.remove("active");
   optionToggle[1].classList.remove("active");
 }
 
 function showOptions() {
-  options.style.visibility = "visible";
-  options.style.opacity = "1";
-  options.style.top = "70px";
+  options.classList.add("shown");
 
   optionToggle[0].classList.add("active");
   optionToggle[1].classList.add("active");

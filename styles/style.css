@@ -336,8 +336,8 @@ body,
     margin-top: 15px;
   }
   .user-options {
-    top: 100px;
-    right: 10px;
+    top: 20px;
+    right: 50px;
     position: absolute;
     padding: 10px;
     z-index: 2;
@@ -363,6 +363,10 @@ body,
   .user-options::before {
     top: -7px;
     right: 50px;
+  }
+  .user-options.shown {
+    top: 54px;
+    right: 10px;
   }
   .notifications-darkMode {
     display: flex;
@@ -827,15 +831,33 @@ nav ul li {
     background-color: #fdfcfa;
     visibility: hidden;
     opacity: 0;
+    transition: 0.2s;
+    width: 0px;
+    height: 0px;
+    font-size: 0;
+  }
+  .user-options * {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .user-options.shown {
+    opacity: 1;
+    visibility: visible;
+    width: 130px;
+    height: 160px;
+  }
+  .user-options.shown * {
+    visibility: visible;
+    opacity: 1;
     transition: 0.3s;
   }
-  .user-options svg {
+  .user-options.shown svg {
     width: 13px;
     cursor: pointer;
     opacity: 0.7;
     padding-right: 5px;
   }
-  .user-options::before {
+  .user-options.shown::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -846,34 +868,34 @@ nav ul li {
     border-bottom: none;
     border-right: none;
   }
-  .user-options h3,
-  .user-options h4 {
+  .user-options.shown h3,
+  .user-options.shown h4 {
     text-align: center;
     color: #0f2c56;
     font-size: 15px;
   }
-  .user-options h4 {
+  .user-options.shown h4 {
     font-size: 10px;
   }
-  .user-options ul {
+  .user-options.shown ul {
     list-style: none;
   }
-  .user-options ul li {
+  .user-options.shown ul li {
     border-top: 1px solid rgba(24, 90, 219, 0.3);
     font-size: 14px;
   }
-  .user-options ul li:hover svg {
+  .user-options.shown ul li:hover svg {
     opacity: 1;
   }
-  .user-options ul li a {
+  .user-options.shown ul li a {
     text-decoration: none;
     color: #0f2c56;
   }
-  .user-options ul li a:hover {
+  .user-options.shown ul li a:hover {
     color: #185adb;
   }
-  .user-options #privacy svg,
-  .user-options #logout svg {
+  .user-options.shown #privacy svg,
+  .user-options.shown #logout svg {
     width: 17px;
     padding-right: 2px;
   }
