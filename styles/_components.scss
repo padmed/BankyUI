@@ -345,6 +345,10 @@ nav {
     height: 130px;
     font-size: 13px;
 
+    * {
+      transition: 0.3;
+    }
+
     .notification-content,
     .notification-content::before {
       opacity: 1;

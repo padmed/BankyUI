@@ -965,6 +965,9 @@ nav ul li {
     height: 130px;
     font-size: 13px;
   }
+  .show * {
+    transition: 0.3;
+  }
   .show .notification-content,
   .show .notification-content::before {
     opacity: 1;
