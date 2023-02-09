@@ -313,6 +313,9 @@ body,
   .right img {
     cursor: pointer;
   }
+  .right {
+    position: relative;
+  }
   .user {
     display: flex;
     align-items: center;
