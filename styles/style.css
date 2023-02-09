@@ -840,24 +840,13 @@ nav ul li {
     visibility: hidden;
     opacity: 0;
   }
-  .user-options.shown {
-    opacity: 1;
-    visibility: visible;
-    width: 130px;
-    height: 160px;
-  }
-  .user-options.shown * {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.3s;
-  }
-  .user-options.shown svg {
+  .user-options svg {
     width: 13px;
     cursor: pointer;
     opacity: 0.7;
     padding-right: 5px;
   }
-  .user-options.shown::before {
+  .user-options::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -868,36 +857,47 @@ nav ul li {
     border-bottom: none;
     border-right: none;
   }
-  .user-options.shown h3,
-  .user-options.shown h4 {
+  .user-options h3,
+  .user-options h4 {
     text-align: center;
     color: #0f2c56;
     font-size: 15px;
   }
-  .user-options.shown h4 {
+  .user-options h4 {
     font-size: 10px;
   }
-  .user-options.shown ul {
+  .user-options ul {
     list-style: none;
   }
-  .user-options.shown ul li {
+  .user-options ul li {
     border-top: 1px solid rgba(24, 90, 219, 0.3);
     font-size: 14px;
   }
-  .user-options.shown ul li:hover svg {
+  .user-options ul li:hover svg {
     opacity: 1;
   }
-  .user-options.shown ul li a {
+  .user-options ul li a {
     text-decoration: none;
     color: #0f2c56;
   }
-  .user-options.shown ul li a:hover {
+  .user-options ul li a:hover {
     color: #185adb;
   }
-  .user-options.shown #privacy svg,
-  .user-options.shown #logout svg {
+  .user-options #privacy svg,
+  .user-options #logout svg {
     width: 17px;
     padding-right: 2px;
+  }
+  .user-options.shown {
+    opacity: 1;
+    visibility: visible;
+    width: 130px;
+    height: 160px;
+  }
+  .user-options.shown * {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
   }
   .notifivations-darkMode {
     width: 30%;
