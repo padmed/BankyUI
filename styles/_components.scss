@@ -212,6 +212,20 @@ nav {
       visibility: hidden;
       opacity: 0;
     }
+  }
+
+  .user-options.shown {
+    opacity: 1;
+    visibility: visible;
+    width: 130px;
+    height: 160px;
+
+    * {
+      visibility: visible;
+      opacity: 1;
+      transition: 0.4s;
+    }
+
     svg {
       width: 13px;
       cursor: pointer;
@@ -260,19 +274,6 @@ nav {
     #logout svg {
       width: 17px;
       padding-right: 2px;
-    }
-  }
-
-  .user-options.shown {
-    opacity: 1;
-    visibility: visible;
-    width: 130px;
-    height: 160px;
-
-    * {
-      visibility: visible;
-      opacity: 1;
-      transition: 0.4s;
     }
   }
 
