@@ -740,9 +740,7 @@ body,
   }
 
   .exchange-rates {
-    // margin-bottom: 100px;
-    height: 500px;
-
+    height: 450px;
     h3 {
       margin-bottom: 50px;
     }
@@ -750,9 +748,12 @@ body,
   .rate-headers {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 0.7fr 0.8fr 0.5fr 0.5fr;
     grid-template-rows: 20px 20px;
+    margin: 41px 0 0 0;
+    padding: 0;
     row-gap: 5px;
+    padding: 0 0 0 30px;
     grid-template-areas:
       "currencyHd offRateHd bankRtHd bankRtHd"
       ". . buyRateHd sellRateHd";
@@ -790,6 +791,43 @@ body,
     .sellRateHd {
       grid-area: sellRateHd;
       justify-self: center;
+    }
+  }
+
+  .rate-data {
+    display: grid;
+    grid-template-columns: 0.7fr 0.8fr 0.5fr 0.5fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    justify-content: center;
+    grid-template-areas: "currency offRt buyRt sellRt";
+    position: relative;
+
+    .currency {
+      grid-area: currency;
+      padding-left: 13px;
+    }
+
+    .official-rate {
+      grid-area: offRt;
+      margin-right: 35px;
+      justify-self: center;
+    }
+
+    .buy-rate {
+      grid-area: buyRt;
+      justify-self: center;
+    }
+
+    .sell-rate {
+      grid-area: sellRt;
+      justify-self: center;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
     }
   }
 }

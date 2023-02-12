@@ -613,14 +613,27 @@ nav {
 
   .rate-headers {
     white-space: nowrap;
-    margin: 25px 0 0 0;
-    padding: 0;
     list-style: none;
     font-size: 11px;
     color: base.$blue;
-    padding: 0 0 0 30px;
 
     &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid base.$light-border-blue;
+    }
+  }
+
+  .rate-data {
+    list-style: none;
+    white-space: nowrap;
+    font-size: 15px;
+
+    .currency > img {
+      width: 35px;
+    }
+
     &::after {
       content: "";
       width: 100%;

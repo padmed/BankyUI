@@ -636,7 +636,7 @@ body,
     padding-bottom: 30px;
   }
   .exchange-rates {
-    height: 500px;
+    height: 450px;
   }
   .exchange-rates h3 {
     margin-bottom: 50px;
@@ -644,9 +644,12 @@ body,
   .rate-headers {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    grid-template-columns: 0.7fr 0.8fr 0.5fr 0.5fr;
     grid-template-rows: 20px 20px;
+    margin: 41px 0 0 0;
+    padding: 0;
     row-gap: 5px;
+    padding: 0 0 0 30px;
     grid-template-areas: "currencyHd offRateHd bankRtHd bankRtHd" ". . buyRateHd sellRateHd";
   }
   .rate-headers::before {
@@ -676,6 +679,37 @@ body,
   .rate-headers .sellRateHd {
     grid-area: sellRateHd;
     justify-self: center;
+  }
+  .rate-data {
+    display: grid;
+    grid-template-columns: 0.7fr 0.8fr 0.5fr 0.5fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    justify-content: center;
+    grid-template-areas: "currency offRt buyRt sellRt";
+    position: relative;
+  }
+  .rate-data .currency {
+    grid-area: currency;
+    padding-left: 13px;
+  }
+  .rate-data .official-rate {
+    grid-area: offRt;
+    margin-right: 35px;
+    justify-self: center;
+  }
+  .rate-data .buy-rate {
+    grid-area: buyRt;
+    justify-self: center;
+  }
+  .rate-data .sell-rate {
+    grid-area: sellRt;
+    justify-self: center;
+  }
+  .rate-data::after {
+    position: absolute;
+    bottom: 0;
   }
 }
 .desktop {
@@ -1245,14 +1279,24 @@ nav ul li {
   }
   .rate-headers {
     white-space: nowrap;
-    margin: 25px 0 0 0;
-    padding: 0;
     list-style: none;
     font-size: 11px;
     color: #185adb;
-    padding: 0 0 0 30px;
   }
   .rate-headers::before, .rate-headers::after {
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+  }
+  .rate-data {
+    list-style: none;
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  .rate-data .currency > img {
+    width: 35px;
+  }
+  .rate-data::after {
     content: "";
     width: 100%;
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
