@@ -1245,7 +1245,7 @@ nav ul li {
   }
   .rate-headers {
     white-space: nowrap;
-    margin: 0;
+    margin: 25px 0 0 0;
     padding: 0;
     list-style: none;
     font-size: 11px;
