@@ -610,4 +610,21 @@ nav {
       }
     }
   }
+
+  .rate-headers {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11px;
+    color: base.$blue;
+    padding: 0 0 0 30px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid base.$light-border-blue;
+    }
+  }
 }
