@@ -629,9 +629,10 @@ nav {
     list-style: none;
     white-space: nowrap;
     font-size: 15px;
+    height: 66px;
 
     .currency > img {
-      width: 35px;
+      width: 40px;
     }
 
     &::after {

@@ -683,12 +683,13 @@ body,
   .rate-data {
     display: grid;
     grid-template-columns: 0.7fr 0.8fr 0.5fr 0.5fr;
-    padding-top: 20px;
-    padding-bottom: 20px;
     margin: 0;
     justify-content: center;
     grid-template-areas: "currency offRt buyRt sellRt";
     position: relative;
+  }
+  .rate-data > * {
+    align-self: center;
   }
   .rate-data .currency {
     grid-area: currency;
@@ -1292,9 +1293,10 @@ nav ul li {
     list-style: none;
     white-space: nowrap;
     font-size: 15px;
+    height: 66px;
   }
   .rate-data .currency > img {
-    width: 35px;
+    width: 40px;
   }
   .rate-data::after {
     content: "";

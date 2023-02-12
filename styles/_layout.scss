@@ -797,12 +797,16 @@ body,
   .rate-data {
     display: grid;
     grid-template-columns: 0.7fr 0.8fr 0.5fr 0.5fr;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
     margin: 0;
     justify-content: center;
     grid-template-areas: "currency offRt buyRt sellRt";
     position: relative;
+
+    & > * {
+      align-self: center;
+    }
 
     .currency {
       grid-area: currency;
