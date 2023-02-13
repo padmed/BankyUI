@@ -269,7 +269,7 @@ body,
   .desktop {
     height: 100%;
     display: grid;
-    grid-template-rows: 70px 48px auto;
+    grid-template-rows: 70px 48px auto auto;
     letter-spacing: 3px;
     overflow: auto;
   }
@@ -728,6 +728,9 @@ body,
   .rate-data::after {
     position: absolute;
     bottom: 0;
+  }
+  .desktop > footer {
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1129px) {
@@ -1324,5 +1327,9 @@ nav ul li {
     content: "";
     width: 100%;
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+  }
+  .desktop footer {
+    background-color: #185adb;
+    height: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -641,4 +641,11 @@ nav {
       border-bottom: 1px solid base.$light-border-blue;
     }
   }
+
+  .desktop {
+    footer {
+      background-color: base.$blue;
+      height: 40px;
+    }
+  }
 }

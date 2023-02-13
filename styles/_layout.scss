@@ -301,7 +301,7 @@ body,
   .desktop {
     height: 100%;
     display: grid;
-    grid-template-rows: 70px 48px auto;
+    grid-template-rows: 70px 48px auto auto;
     letter-spacing: 3px;
     overflow: auto;
   }
@@ -850,6 +850,10 @@ body,
       position: absolute;
       bottom: 0;
     }
+  }
+
+  .desktop > footer {
+    margin-top: 50px;
   }
 
   @media only screen and (max-width: 1129px) {
