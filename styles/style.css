@@ -555,6 +555,9 @@ body,
     display: flex;
     gap: 1px;
   }
+  .recent-transactions {
+    margin-top: 15px;
+  }
   .transaction-content {
     margin: 0;
     padding: 10px 30px;
@@ -631,6 +634,9 @@ body,
     position: absolute;
     bottom: 0;
     left: 24px;
+  }
+  .recent-transactions {
+    margin: 0;
   }
   .recent-transactions #transaction-header {
     padding-bottom: 30px;
@@ -712,6 +718,11 @@ body,
   .rate-data::after {
     position: absolute;
     bottom: 0;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1129px) {
+  .recent-transactions {
+    margin-top: 15px;
   }
 }
 .desktop {
