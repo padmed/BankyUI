@@ -473,12 +473,25 @@ body,
   .main.wide .info-header {
     margin-top: 25px;
     padding: 0px 30px;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 0;
   }
   .main.wide .info-header li {
     padding-bottom: 5px;
+  }
+  .main.wide .cards > * {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main.wide .cards > * :first-child {
+    justify-self: start;
+  }
+  .main.wide .cards > * :nth-child(2) {
+    justify-self: center;
+  }
+  .main.wide .cards > * :last-child {
+    justify-self: end;
   }
   .main.wide .card-info .info-header {
     margin-top: 35px;
@@ -487,9 +500,6 @@ body,
     padding: 0px 20px;
   }
   .card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 23px;
     margin: 0;
   }
