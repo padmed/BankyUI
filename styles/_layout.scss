@@ -854,6 +854,36 @@ body,
 
   .desktop > footer {
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-areas:
+      "bankyInfo productInfo securityInfo supportInfo"
+      "copyright . . createdBy";
+
+    .banky-info {
+      grid-area: bankyInfo;
+    }
+
+    .copyright {
+      grid-area: copyright;
+    }
+
+    .product-info {
+      grid-area: productInfo;
+    }
+
+    .security-info {
+      grid-area: securityInfo;
+    }
+
+    .support-info {
+      grid-area: supportInfo;
+    }
+
+    .createdBy {
+      grid-area: createdBy;
+    }
   }
 
   @media only screen and (max-width: 1129px) {

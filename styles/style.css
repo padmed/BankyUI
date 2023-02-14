@@ -731,6 +731,28 @@ body,
   }
   .desktop > footer {
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+    grid-template-areas: "bankyInfo productInfo securityInfo supportInfo" "copyright . . createdBy";
+  }
+  .desktop > footer .banky-info {
+    grid-area: bankyInfo;
+  }
+  .desktop > footer .copyright {
+    grid-area: copyright;
+  }
+  .desktop > footer .product-info {
+    grid-area: productInfo;
+  }
+  .desktop > footer .security-info {
+    grid-area: securityInfo;
+  }
+  .desktop > footer .support-info {
+    grid-area: supportInfo;
+  }
+  .desktop > footer .createdBy {
+    grid-area: createdBy;
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1129px) {
@@ -1329,7 +1351,6 @@ nav ul li {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
   .desktop footer {
-    background-color: #185adb;
-    height: 40px;
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
