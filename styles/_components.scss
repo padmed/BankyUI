@@ -642,9 +642,25 @@ nav {
     }
   }
 
-  .desktop {
-    footer {
-      height: 500px;
+  .desktop footer {
+    height: 300px;
+    color: base.$dark;
+
+    h2 {
+      font-size: 17px;
+    }
+
+    span,
+    p {
+      font-size: 12px;
+    }
+
+    .banky-info {
+      p,
+      h2,
+      div {
+        width: 60%;
+      }
     }
   }
 }

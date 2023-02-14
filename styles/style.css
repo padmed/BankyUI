@@ -731,13 +731,25 @@ body,
   }
   .desktop > footer {
     margin-top: 50px;
+    border: 1px solid;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.2fr;
+    justify-items: center;
     grid-template-areas: "bankyInfo productInfo securityInfo supportInfo" "copyright . . createdBy";
+  }
+  .desktop > footer .createdBy,
+  .desktop > footer .support-info,
+  .desktop > footer .security-info,
+  .desktop > footer .product-info,
+  .desktop > footer .banky-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .desktop > footer .banky-info {
     grid-area: bankyInfo;
+    align-items: center;
   }
   .desktop > footer .copyright {
     grid-area: copyright;
@@ -1351,6 +1363,19 @@ nav ul li {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
   .desktop footer {
-    height: 500px;
+    height: 300px;
+    color: #0f2c56;
+  }
+  .desktop footer h2 {
+    font-size: 17px;
+  }
+  .desktop footer span,
+  .desktop footer p {
+    font-size: 12px;
+  }
+  .desktop footer .banky-info p,
+  .desktop footer .banky-info h2,
+  .desktop footer .banky-info div {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

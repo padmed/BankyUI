@@ -854,15 +854,28 @@ body,
 
   .desktop > footer {
     margin-top: 50px;
+    border: 1px solid;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.2fr;
+    justify-items: center;
     grid-template-areas:
       "bankyInfo productInfo securityInfo supportInfo"
       "copyright . . createdBy";
 
+    .createdBy,
+    .support-info,
+    .security-info,
+    .product-info,
+    .banky-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
     .banky-info {
       grid-area: bankyInfo;
+      align-items: center;
     }
 
     .copyright {
