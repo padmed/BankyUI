@@ -853,6 +853,7 @@ body,
   }
 
   .desktop > footer {
+    position: relative;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1.3fr repeat(3, 1fr);
@@ -862,7 +863,10 @@ body,
       "bankyInfo productInfo securityInfo supportInfo"
       "credits credits credits credits";
 
-    .createdBy,
+    &::before {
+      position: absolute;
+    }
+
     .support-info,
     .security-info,
     .product-info,
@@ -870,6 +874,12 @@ body,
       display: flex;
       flex-direction: column;
       gap: 10px;
+    }
+
+    .support-info,
+    .security-info,
+    .product-info {
+      margin-top: 10px;
     }
 
     .banky-info {
@@ -903,6 +913,7 @@ body,
 
     .createdBy {
       display: flex;
+      gap: 6px;
       flex-direction: row;
       margin-bottom: auto;
       margin-bottom: 5px;

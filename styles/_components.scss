@@ -646,7 +646,13 @@ nav {
     height: 260px;
     color: base.$dark;
     background-color: base.$white;
-    border-top: 40px solid base.$blue;
+    border-top: 30px solid base.$blue;
+
+    &::before {
+      content: "";
+      width: 100%;
+      border-bottom: 5px solid base.$yellow;
+    }
 
     h2 {
       font-size: 17px;

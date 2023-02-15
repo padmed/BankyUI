@@ -730,6 +730,7 @@ body,
     bottom: 0;
   }
   .desktop > footer {
+    position: relative;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1.3fr repeat(3, 1fr);
@@ -737,7 +738,9 @@ body,
     justify-items: center;
     grid-template-areas: "bankyInfo productInfo securityInfo supportInfo" "credits credits credits credits";
   }
-  .desktop > footer .createdBy,
+  .desktop > footer::before {
+    position: absolute;
+  }
   .desktop > footer .support-info,
   .desktop > footer .security-info,
   .desktop > footer .product-info,
@@ -745,6 +748,11 @@ body,
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .desktop > footer .support-info,
+  .desktop > footer .security-info,
+  .desktop > footer .product-info {
+    margin-top: 10px;
   }
   .desktop > footer .banky-info {
     grid-area: bankyInfo;
@@ -771,6 +779,7 @@ body,
   }
   .desktop > footer .createdBy {
     display: flex;
+    gap: 6px;
     flex-direction: row;
     margin-bottom: auto;
     margin-bottom: 5px;
@@ -1382,7 +1391,12 @@ nav ul li {
     height: 260px;
     color: #0f2c56;
     background-color: #fdfcfa;
-    border-top: 40px solid #185adb;
+    border-top: 30px solid #185adb;
+  }
+  .desktop footer::before {
+    content: "";
+    width: 100%;
+    border-bottom: 5px solid #ffc947;
   }
   .desktop footer h2 {
     font-size: 17px;
