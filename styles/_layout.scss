@@ -875,6 +875,10 @@ body,
     .banky-info {
       grid-area: bankyInfo;
       align-items: center;
+
+      p {
+        margin-top: 0;
+      }
     }
 
     .product-info {
@@ -892,20 +896,24 @@ body,
     .credits {
       grid-area: credits;
       justify-self: center;
+      margin-left: 100px;
+      margin-right: 20px;
+      text-align: center;
     }
 
     .createdBy {
       display: flex;
       flex-direction: row;
       margin-bottom: auto;
-    }
+      margin-bottom: 5px;
+      align-items: center;
 
-    .createdBy,
-    .copyright {
-      justify-self: start;
-      align-self: center;
-      margin-left: 100px;
-      margin-right: 20px;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 400;
+      }
     }
   }
 

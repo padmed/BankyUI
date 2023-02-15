@@ -652,17 +652,28 @@ nav {
       font-size: 17px;
     }
 
-    span,
-    p {
+    a,
+    p,
+    span {
       font-size: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      color: base.$dark;
+
+      &:active {
+        color: base.$blue;
+      }
     }
 
     .banky-info {
       h2 {
         color: base.$blue;
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 600;
       }
+
       p,
       h2,
       div {
