@@ -731,12 +731,11 @@ body,
   }
   .desktop > footer {
     margin-top: 50px;
-    border: 1px solid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr;
+    grid-template-columns: 1.3fr repeat(3, 1fr);
+    grid-template-rows: 1fr 0.3fr;
     justify-items: center;
-    grid-template-areas: "bankyInfo productInfo securityInfo supportInfo" "copyright . . createdBy";
+    grid-template-areas: "bankyInfo productInfo securityInfo supportInfo" "credits credits credits credits";
   }
   .desktop > footer .createdBy,
   .desktop > footer .support-info,
@@ -751,9 +750,6 @@ body,
     grid-area: bankyInfo;
     align-items: center;
   }
-  .desktop > footer .copyright {
-    grid-area: copyright;
-  }
   .desktop > footer .product-info {
     grid-area: productInfo;
   }
@@ -763,8 +759,21 @@ body,
   .desktop > footer .support-info {
     grid-area: supportInfo;
   }
+  .desktop > footer .credits {
+    grid-area: credits;
+    justify-self: center;
+  }
   .desktop > footer .createdBy {
-    grid-area: createdBy;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: auto;
+  }
+  .desktop > footer .createdBy,
+  .desktop > footer .copyright {
+    justify-self: start;
+    align-self: center;
+    margin-left: 100px;
+    margin-right: 20px;
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1129px) {
@@ -1363,8 +1372,10 @@ nav ul li {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
   .desktop footer {
-    height: 300px;
+    height: 260px;
     color: #0f2c56;
+    background-color: #fdfcfa;
+    border-top: 40px solid #185adb;
   }
   .desktop footer h2 {
     font-size: 17px;
@@ -1376,6 +1387,9 @@ nav ul li {
   .desktop footer .banky-info p,
   .desktop footer .banky-info h2,
   .desktop footer .banky-info div {
-    width: 60%;
+    width: 50%;
+  }
+  .desktop footer .createdBy {
+    white-space: nowrap;
   }
 }/*# sourceMappingURL=style.css.map */

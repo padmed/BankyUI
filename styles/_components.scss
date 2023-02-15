@@ -643,8 +643,10 @@ nav {
   }
 
   .desktop footer {
-    height: 300px;
+    height: 260px;
     color: base.$dark;
+    background-color: base.$white;
+    border-top: 40px solid base.$blue;
 
     h2 {
       font-size: 17px;
@@ -659,8 +661,12 @@ nav {
       p,
       h2,
       div {
-        width: 60%;
+        width: 50%;
       }
+    }
+
+    .createdBy {
+      white-space: nowrap;
     }
   }
 }

@@ -854,14 +854,13 @@ body,
 
   .desktop > footer {
     margin-top: 50px;
-    border: 1px solid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr;
+    grid-template-columns: 1.3fr repeat(3, 1fr);
+    grid-template-rows: 1fr 0.3fr;
     justify-items: center;
     grid-template-areas:
       "bankyInfo productInfo securityInfo supportInfo"
-      "copyright . . createdBy";
+      "credits credits credits credits";
 
     .createdBy,
     .support-info,
@@ -878,10 +877,6 @@ body,
       align-items: center;
     }
 
-    .copyright {
-      grid-area: copyright;
-    }
-
     .product-info {
       grid-area: productInfo;
     }
@@ -894,8 +889,23 @@ body,
       grid-area: supportInfo;
     }
 
+    .credits {
+      grid-area: credits;
+      justify-self: center;
+    }
+
     .createdBy {
-      grid-area: createdBy;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: auto;
+    }
+
+    .createdBy,
+    .copyright {
+      justify-self: start;
+      align-self: center;
+      margin-left: 100px;
+      margin-right: 20px;
     }
   }
 
