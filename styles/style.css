@@ -1384,10 +1384,21 @@ nav ul li {
   .desktop footer p {
     font-size: 12px;
   }
+  .desktop footer .banky-info h2 {
+    color: #185adb;
+    font-size: 20px;
+    font-weight: 600;
+  }
   .desktop footer .banky-info p,
   .desktop footer .banky-info h2,
   .desktop footer .banky-info div {
     width: 50%;
+  }
+  .desktop footer .banky-info img {
+    cursor: pointer;
+  }
+  .desktop footer .banky-info img:active {
+    transform: scale(0.9);
   }
   .desktop footer .createdBy {
     white-space: nowrap;
