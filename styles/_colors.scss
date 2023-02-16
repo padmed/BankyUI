@@ -9,7 +9,30 @@ $background-dark: #001f3f;
 $dark: #083358;
 $dark-blue: #0d63a5;
 
-.light {
+.mobile {
+  .top > p,
+  .details,
+  footer > a {
+    color: $blue;
+  }
+
+  header {
+    background-color: $blue;
+  }
+
+  .card span,
+  header {
+    color: $white;
+  }
+
+  .top,
+  .quick-transaction,
+  .deposits {
+    background-color: $white;
+  }
+}
+
+.light.desktop {
   .card,
   header {
     color: $white;
@@ -25,5 +48,21 @@ $dark-blue: #0d63a5;
   .more-dropdown,
   footer {
     background-color: $white;
+  }
+
+  .rate-headers,
+  .show-all,
+  .info-header,
+  .banky-info > h2,
+  a:active,
+  #noti-heading,
+  .user-options.shown > a:hover,
+  #navigation {
+    color: $blue;
+  }
+
+  header,
+  #navigation span::before {
+    background-color: $blue;
   }
 }

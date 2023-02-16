@@ -113,7 +113,6 @@
 }
 
 .details {
-  color: base.$blue;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -160,8 +159,6 @@ nav {
   }
 
   header {
-    background-color: base.$blue;
-
     h1 {
       font-size: 25px;
     }
@@ -261,10 +258,6 @@ nav {
       a {
         text-decoration: none;
         color: colors.$black;
-
-        &:hover {
-          color: base.$blue;
-        }
       }
     }
 
@@ -296,7 +289,6 @@ nav {
     }
 
     #noti-heading {
-      color: base.$blue;
       font-weight: 600;
     }
   }
@@ -357,7 +349,6 @@ nav {
   #navigation {
     width: 100%;
     background-color: base.$yellow;
-    color: base.$blue;
     font-weight: 600;
     overflow: hidden;
 
@@ -366,7 +357,6 @@ nav {
 
       &::before {
         @include base.container-pointer;
-        background-color: base.$blue;
         opacity: 0;
         transition: 0.3s;
       }
@@ -411,7 +401,6 @@ nav {
 
   .info-header {
     @include base.content-style;
-    color: base.$blue;
     font-size: 11px;
   }
 
@@ -436,7 +425,6 @@ nav {
 
   .show-all {
     font-size: 13px;
-    color: base.$blue;
     cursor: pointer;
     transition: 1s;
     font-weight: 600;
@@ -611,7 +599,6 @@ nav {
     white-space: nowrap;
     list-style: none;
     font-size: 11px;
-    color: base.$blue;
 
     &::before,
     &::after {
@@ -662,15 +649,10 @@ nav {
     a {
       text-decoration: none;
       color: colors.$black;
-
-      &:active {
-        color: base.$blue;
-      }
     }
 
     .banky-info {
       h2 {
-        color: base.$blue;
         font-size: 23px;
         font-weight: 600;
       }

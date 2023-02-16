@@ -1,18 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
-.light .card,
-.light header {
+.mobile .top > p,
+.mobile .details,
+.mobile footer > a {
+  color: #185adb;
+}
+.mobile header {
+  background-color: #185adb;
+}
+.mobile .card span,
+.mobile header {
   color: #fdfcfa;
 }
-.light .card-info,
-.light .deposits,
-.light .contacts,
-.light .recent-transactions,
-.light .exchange-rates,
-.light .notification-container,
-.light .user-options,
-.light .more-dropdown,
-.light footer {
+.mobile .top,
+.mobile .quick-transaction,
+.mobile .deposits {
   background-color: #fdfcfa;
+}
+
+.light.desktop .card,
+.light.desktop header {
+  color: #fdfcfa;
+}
+.light.desktop .card-info,
+.light.desktop .deposits,
+.light.desktop .contacts,
+.light.desktop .recent-transactions,
+.light.desktop .exchange-rates,
+.light.desktop .notification-container,
+.light.desktop .user-options,
+.light.desktop .more-dropdown,
+.light.desktop footer {
+  background-color: #fdfcfa;
+}
+.light.desktop .rate-headers,
+.light.desktop .show-all,
+.light.desktop .info-header,
+.light.desktop .banky-info > h2,
+.light.desktop a:active,
+.light.desktop #noti-heading,
+.light.desktop .user-options.shown > a:hover,
+.light.desktop #navigation {
+  color: #185adb;
+}
+.light.desktop header,
+.light.desktop #navigation span::before {
+  background-color: #185adb;
 }
 
 html,
@@ -37,7 +69,6 @@ body,
   display: none;
 }
 .mobile .top {
-  background-color: #fdfcfa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +78,6 @@ body,
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .mobile .top p {
-  color: #185adb;
   font-size: 18px;
   margin-top: 30px;
 }
@@ -60,8 +90,6 @@ body,
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
-  background-color: #185adb;
-  color: #fdfcfa;
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
   align-items: center;
@@ -106,7 +134,6 @@ body,
   grid-template-columns: 1fr;
   color: #0f2c56;
   gap: 20px;
-  background-color: #fdfcfa;
 }
 .mobile .quick-transaction h3 {
   margin: 0;
@@ -131,7 +158,6 @@ body,
   gap: 20px;
 }
 .mobile .deposits {
-  background-color: #fdfcfa;
   border: 2px solid rgba(24, 90, 219, 0.3);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 13px;
@@ -271,7 +297,6 @@ body,
   align-content: center;
   gap: 8px;
   height: 40px;
-  color: #185adb;
   text-decoration: none;
 }
 .mobile .empty {
@@ -926,7 +951,6 @@ body,
 }
 
 .details {
-  color: #185adb;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -966,9 +990,6 @@ nav ul li {
     display: grid;
     font-family: "Nunito", sans-serif;
     background-color: #f4f4f4;
-  }
-  header {
-    background-color: #185adb;
   }
   header h1 {
     font-size: 25px;
@@ -1065,9 +1086,6 @@ nav ul li {
     text-decoration: none;
     color: #0f2c56;
   }
-  .user-options.shown ul li a:hover {
-    color: #185adb;
-  }
   .user-options.shown #privacy svg,
   .user-options.shown #logout svg {
     width: 17px;
@@ -1093,7 +1111,6 @@ nav ul li {
     transform: scale(1.1);
   }
   .notification-container #noti-heading {
-    color: #185adb;
     font-weight: 600;
   }
   .notification-content {
@@ -1149,7 +1166,6 @@ nav ul li {
   #navigation {
     width: 100%;
     background-color: #ffc947;
-    color: #185adb;
     font-weight: 600;
     overflow: hidden;
   }
@@ -1166,7 +1182,6 @@ nav ul li {
     transform: rotate(45deg);
     border-bottom: none;
     border-right: none;
-    background-color: #185adb;
     opacity: 0;
     transition: 0.3s;
   }
@@ -1203,7 +1218,6 @@ nav ul li {
   .info-header {
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
     list-style: none;
-    color: #185adb;
     font-size: 11px;
   }
   .card-content {
@@ -1226,7 +1240,6 @@ nav ul li {
   }
   .show-all {
     font-size: 13px;
-    color: #185adb;
     cursor: pointer;
     transition: 1s;
     font-weight: 600;
@@ -1376,7 +1389,6 @@ nav ul li {
     white-space: nowrap;
     list-style: none;
     font-size: 11px;
-    color: #185adb;
   }
   .rate-headers::before, .rate-headers::after {
     content: "";
@@ -1419,11 +1431,7 @@ nav ul li {
     text-decoration: none;
     color: #0f2c56;
   }
-  .desktop footer a:active {
-    color: #185adb;
-  }
   .desktop footer .banky-info h2 {
-    color: #185adb;
     font-size: 23px;
     font-weight: 600;
   }

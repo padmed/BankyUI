@@ -23,7 +23,6 @@ body,
   }
 
   .top {
-    background-color: base.$white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +32,6 @@ body,
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
 
     p {
-      color: base.$blue;
       font-size: 18px;
       margin-top: 30px;
     }
@@ -48,8 +46,6 @@ body,
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
-    background-color: base.$blue;
-    color: base.$white;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     align-items: center;
@@ -101,7 +97,6 @@ body,
     grid-template-columns: 1fr;
     color: colors.$black;
     gap: 20px;
-    background-color: base.$white;
 
     h3 {
       margin: 0;
@@ -130,7 +125,6 @@ body,
   }
 
   .deposits {
-    background-color: base.$white;
     @include base.border-style;
     display: flex;
     flex-direction: column;
@@ -285,7 +279,6 @@ body,
     align-content: center;
     gap: 8px;
     height: 40px;
-    color: base.$blue;
     text-decoration: none;
   }
 
