@@ -1,4 +1,5 @@
 @use "base";
+@use "colors";
 
 .desktop {
   display: none;
@@ -26,13 +27,12 @@
   width: 280px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  color: base.$white;
   margin-top: 3vh;
   margin-bottom: 3vh;
   user-select: none;
 
   .infoBack {
-    background-color: base.$dark;
+    background-color: colors.$black;
     margin: 15px;
     padding: 1px;
     padding-right: 3px;
@@ -161,7 +161,6 @@ nav {
 
   header {
     background-color: base.$blue;
-    color: base.$white;
 
     h1 {
       font-size: 25px;
@@ -200,7 +199,6 @@ nav {
 
   .user-options {
     @include base.desktop-options-border;
-    background-color: base.$white;
     visibility: hidden;
     opacity: 0;
     transition: 0.2s;
@@ -240,7 +238,7 @@ nav {
     h3,
     h4 {
       text-align: center;
-      color: base.$dark;
+      color: colors.$black;
       font-size: 15px;
     }
 
@@ -262,7 +260,7 @@ nav {
 
       a {
         text-decoration: none;
-        color: base.$dark;
+        color: colors.$black;
 
         &:hover {
           color: base.$blue;
@@ -283,9 +281,8 @@ nav {
 
   .notification-container {
     @include base.desktop-options-border;
-    background-color: base.$white;
     font-size: 0px;
-    color: base.$dark;
+    color: colors.$black;
     width: 10px;
     height: 10px;
     transition: 0.2s;
@@ -318,7 +315,7 @@ nav {
 
     #noti-content {
       font-size: 11px;
-      color: base.$dark;
+      color: colors.$black;
     }
 
     img {
@@ -381,7 +378,7 @@ nav {
   }
 
   .main.wide {
-    color: base.$dark;
+    color: colors.$black;
     // letter-spacing: 1px;
 
     .card-info,
@@ -389,9 +386,9 @@ nav {
     .contacts,
     .recent-transactions,
     .exchange-rates {
-      background-color: base.$white;
       @include base.border-style(rgba(24, 90, 219, 0.4));
     }
+
     .right-top {
       border: none;
       box-shadow: none;
@@ -402,7 +399,7 @@ nav {
     }
 
     h3 {
-      color: base.$dark;
+      color: colors.$black;
       font-size: 15px;
       font-weight: 400;
     }
@@ -559,7 +556,6 @@ nav {
 
     .more-dropdown {
       border: 2px solid base.$blue;
-      background-color: base.$white;
       font-size: 0px;
       width: 70px;
       height: 35px;
@@ -644,8 +640,7 @@ nav {
 
   .desktop footer {
     height: 260px;
-    color: base.$dark;
-    background-color: base.$white;
+    color: colors.$black;
     border-top: 30px solid base.$blue;
 
     &::before {
@@ -666,7 +661,7 @@ nav {
 
     a {
       text-decoration: none;
-      color: base.$dark;
+      color: colors.$black;
 
       &:active {
         color: base.$blue;

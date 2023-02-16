@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+.light .card,
+.light header {
+  color: #fdfcfa;
+}
+.light .card-info,
+.light .deposits,
+.light .contacts,
+.light .recent-transactions,
+.light .exchange-rates,
+.light .notification-container,
+.light .user-options,
+.light .more-dropdown,
+.light footer {
+  background-color: #fdfcfa;
+}
+
 html,
 body,
 .mobile {
@@ -824,7 +840,6 @@ body,
   width: 280px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  color: #fdfcfa;
   margin-top: 3vh;
   margin-bottom: 3vh;
   -webkit-user-select: none;
@@ -954,7 +969,6 @@ nav ul li {
   }
   header {
     background-color: #185adb;
-    color: #fdfcfa;
   }
   header h1 {
     font-size: 25px;
@@ -989,7 +1003,6 @@ nav ul li {
     border: 2px solid #185adb;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(24, 90, 219, 0.5);
-    background-color: #fdfcfa;
     visibility: hidden;
     opacity: 0;
     transition: 0.2s;
@@ -1067,7 +1080,6 @@ nav ul li {
     border: 2px solid #185adb;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(24, 90, 219, 0.5);
-    background-color: #fdfcfa;
     font-size: 0px;
     color: #0f2c56;
     width: 10px;
@@ -1169,7 +1181,6 @@ nav ul li {
   .main.wide .contacts,
   .main.wide .recent-transactions,
   .main.wide .exchange-rates {
-    background-color: #fdfcfa;
     border: 2px solid rgba(24, 90, 219, 0.4);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 13px;
@@ -1310,7 +1321,6 @@ nav ul li {
   }
   .transaction-content .more-dropdown {
     border: 2px solid #185adb;
-    background-color: #fdfcfa;
     font-size: 0px;
     width: 70px;
     height: 35px;
@@ -1390,7 +1400,6 @@ nav ul li {
   .desktop footer {
     height: 260px;
     color: #0f2c56;
-    background-color: #fdfcfa;
     border-top: 30px solid #185adb;
   }
   .desktop footer::before {
