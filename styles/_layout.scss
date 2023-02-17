@@ -7,7 +7,6 @@ body,
   height: 100%;
 }
 .mobile {
-  background-color: base.$background-white;
   font-family: base.$font-nunito;
   font-weight: 800;
   min-width: 200px;
@@ -15,7 +14,6 @@ body,
   grid-template-columns: 100%;
   grid-template-rows: 400px auto auto auto;
   gap: 25px;
-  color: colors.$black;
   letter-spacing: 3px;
 
   .desktop {
@@ -26,7 +24,7 @@ body,
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid rgb(24, 90, 219, 0.3);
+    border-bottom: 2px solid rgba(24, 90, 219, 0.3);
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
@@ -95,7 +93,6 @@ body,
     display: grid;
     grid-template-rows: 1px 1fr;
     grid-template-columns: 1fr;
-    color: colors.$black;
     gap: 20px;
 
     h3 {
@@ -214,7 +211,7 @@ body,
 
     .line-half {
       width: 90%;
-      border-bottom: 1px solid rgb(24, 90, 219, 0.5);
+      border-bottom: 1px solid rgba(24, 90, 219, 0.5);
       margin-top: 15px;
       margin-bottom: 15px;
     }
@@ -715,10 +712,6 @@ body,
         padding: 8px 8px;
         border-radius: 3px;
         position: relative;
-      }
-
-      span:hover {
-        background-color: base.$background-white;
       }
 
       span:first-of-type:before {

@@ -8,8 +8,12 @@ $light-border-blue: rgba(24, 90, 219, 0.3);
 $background-dark: #001f3f;
 $dark: #083358;
 $dark-blue: #0d63a5;
-
+//rgb(24, 90, 219, 0.3)
+//rgb(24, 90, 219, 0.5)
 .mobile {
+  background-color: $background-white;
+  color: $black;
+
   .top > p,
   .details,
   footer > a {
@@ -30,9 +34,19 @@ $dark-blue: #0d63a5;
   .deposits {
     background-color: $white;
   }
+
+  .infoBack {
+    background-color: $black;
+  }
+
+  nav {
+    background-color: $yellow;
+  }
 }
 
 .light.desktop {
+  background-color: $background-white;
+
   .card,
   header {
     color: $white;
@@ -50,6 +64,13 @@ $dark-blue: #0d63a5;
     background-color: $white;
   }
 
+  .more-dropdown span:hover,
+  .transaction-content:hover,
+  .contact:hover,
+  .search {
+    background-color: $background-white;
+  }
+
   .rate-headers,
   .show-all,
   .info-header,
@@ -64,5 +85,21 @@ $dark-blue: #0d63a5;
   header,
   #navigation span::before {
     background-color: $blue;
+  }
+
+  .user-options.shown h3,
+  .user-options.shown h4,
+  .user-options.shown a,
+  .notification-container,
+  #noti-content,
+  .main.wide,
+  .main.wide h3,
+  footer,
+  footer a {
+    color: $black;
+  }
+
+  #navigation {
+    background-color: $yellow;
   }
 }

@@ -32,7 +32,6 @@
   user-select: none;
 
   .infoBack {
-    background-color: colors.$black;
     margin: 15px;
     padding: 1px;
     padding-right: 3px;
@@ -132,7 +131,6 @@ nav {
   position: fixed;
   bottom: 0;
   margin-bottom: 20px;
-  background-color: base.$yellow;
 
   ul {
     margin: 0;
@@ -155,7 +153,6 @@ nav {
   .desktop {
     display: grid;
     font-family: base.$font-nunito;
-    background-color: base.$background-white;
   }
 
   header {
@@ -167,7 +164,6 @@ nav {
   .search {
     border-radius: 18px;
     border: 2px solid base.$yellow;
-    background-color: base.$background-white;
 
     input[type="text"] {
       border: none;
@@ -235,7 +231,6 @@ nav {
     h3,
     h4 {
       text-align: center;
-      color: colors.$black;
       font-size: 15px;
     }
 
@@ -257,7 +252,6 @@ nav {
 
       a {
         text-decoration: none;
-        color: colors.$black;
       }
     }
 
@@ -275,7 +269,6 @@ nav {
   .notification-container {
     @include base.desktop-options-border;
     font-size: 0px;
-    color: colors.$black;
     width: 10px;
     height: 10px;
     transition: 0.2s;
@@ -307,7 +300,6 @@ nav {
 
     #noti-content {
       font-size: 11px;
-      color: colors.$black;
     }
 
     img {
@@ -348,7 +340,6 @@ nav {
 
   #navigation {
     width: 100%;
-    background-color: base.$yellow;
     font-weight: 600;
     overflow: hidden;
 
@@ -368,7 +359,6 @@ nav {
   }
 
   .main.wide {
-    color: colors.$black;
     // letter-spacing: 1px;
 
     .card-info,
@@ -389,7 +379,6 @@ nav {
     }
 
     h3 {
-      color: colors.$black;
       font-size: 15px;
       font-weight: 400;
     }
@@ -466,7 +455,6 @@ nav {
 
       &:hover {
         border: 1px solid base.$blue;
-        background-color: base.$background-white;
       }
 
       &:active {
@@ -489,10 +477,6 @@ nav {
     white-space: nowrap;
     list-style: none;
     cursor: pointer;
-
-    &:hover {
-      background-color: base.$background-white;
-    }
 
     .contact > div {
       width: 45px;
@@ -627,7 +611,6 @@ nav {
 
   .desktop footer {
     height: 260px;
-    color: colors.$black;
     border-top: 30px solid base.$blue;
 
     &::before {
@@ -648,7 +631,6 @@ nav {
 
     a {
       text-decoration: none;
-      color: colors.$black;
     }
 
     .banky-info {
