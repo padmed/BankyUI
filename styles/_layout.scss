@@ -645,6 +645,15 @@ body,
   .recent-transactions {
     margin-top: 15px;
   }
+
+  .dark .transaction-content {
+    padding: 8px 30px;
+
+    :last-child {
+      padding: 1px 1px;
+    }
+  }
+
   .transaction-content {
     margin: 0;
     padding: 10px 30px;

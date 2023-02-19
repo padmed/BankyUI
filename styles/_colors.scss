@@ -42,6 +42,14 @@ $dark-blue: #0d63a5;
   nav {
     background-color: $yellow;
   }
+
+  //borders
+  .card {
+    border: 3px solid $blue;
+  }
+  .photo-placeholder {
+    border: 1px solid $blue;
+  }
 }
 
 .light.desktop {
@@ -71,14 +79,17 @@ $dark-blue: #0d63a5;
     background-color: $background-white;
   }
 
-  .rate-headers,
   .show-all,
-  .info-header,
   .banky-info > h2,
   a:active,
   #noti-heading,
   .user-options.shown > a:hover,
   #navigation {
+    color: $blue;
+  }
+
+  .rate-headers,
+  .info-header {
     color: $blue;
   }
 
@@ -101,5 +112,87 @@ $dark-blue: #0d63a5;
 
   #navigation {
     background-color: $yellow;
+  }
+
+  //borders
+  .photo-placeholder {
+    border: 1px solid $blue;
+  }
+}
+
+.dark {
+  background-color: $background-dark;
+
+  .card,
+  header {
+    color: $white;
+  }
+
+  .card-info,
+  .deposits,
+  .contacts,
+  .recent-transactions,
+  .exchange-rates,
+  .notification-container,
+  .user-options,
+  .more-dropdown,
+  footer {
+    background-color: $dark;
+  }
+
+  .more-dropdown span:hover,
+  .transaction-content:hover,
+  .contact:hover,
+  .search {
+    background-color: $background-dark;
+  }
+
+  .rate-headers,
+  .show-all,
+  .info-header,
+  .banky-info > h2,
+  a:active,
+  #noti-heading,
+  .user-options.shown > a:hover,
+  #navigation {
+    color: $yellow;
+  }
+
+  header,
+  #navigation span::before {
+    background-color: $blue;
+  }
+
+  .rate-headers,
+  .show-all,
+  .info-header,
+  .banky-info > h2,
+  a:active,
+  #noti-heading,
+  .user-options.shown > a:hover,
+  #navigation {
+    color: $yellow;
+  }
+
+  .user-options.shown h3,
+  .user-options.shown h4,
+  .user-options.shown a,
+  .notification-container,
+  #noti-content,
+  .main.wide,
+  .main.wide h3,
+  footer,
+  footer a {
+    color: $white;
+  }
+
+  #navigation {
+    background-color: $yellow;
+    color: $blue;
+  }
+
+  //borders
+  .photo-placeholder {
+    border: 2px solid $yellow;
   }
 }
