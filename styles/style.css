@@ -26,9 +26,6 @@
 .mobile nav {
   background-color: #ffc947;
 }
-.mobile .card {
-  border: 3px solid #185adb;
-}
 
 .light.desktop {
   background-color: #f4f4f4;
@@ -54,16 +51,14 @@
 .light.desktop .search {
   background-color: #f4f4f4;
 }
+.light.desktop .rate-headers,
 .light.desktop .show-all,
+.light.desktop .info-header,
 .light.desktop .banky-info > h2,
 .light.desktop a:active,
 .light.desktop #noti-heading,
 .light.desktop .user-options.shown > a:hover,
 .light.desktop #navigation {
-  color: #185adb;
-}
-.light.desktop .rate-headers,
-.light.desktop .info-header {
   color: #185adb;
 }
 .light.desktop header,
@@ -83,70 +78,6 @@
 }
 .light.desktop #navigation {
   background-color: #ffc947;
-}
-
-.dark {
-  background-color: #001f3f;
-}
-.dark .card,
-.dark header {
-  color: #fdfcfa;
-}
-.dark .card-info,
-.dark .deposits,
-.dark .contacts,
-.dark .recent-transactions,
-.dark .exchange-rates,
-.dark .notification-container,
-.dark .user-options,
-.dark .more-dropdown,
-.dark footer {
-  background-color: #083358;
-}
-.dark .more-dropdown span:hover,
-.dark .transaction-content:hover,
-.dark .contact:hover,
-.dark .search {
-  background-color: #001f3f;
-}
-.dark .rate-headers,
-.dark .show-all,
-.dark .info-header,
-.dark .banky-info > h2,
-.dark a:active,
-.dark #noti-heading,
-.dark .user-options.shown > a:hover,
-.dark #navigation {
-  color: #ffc947;
-}
-.dark header,
-.dark #navigation span::before {
-  background-color: #185adb;
-}
-.dark .rate-headers,
-.dark .show-all,
-.dark .info-header,
-.dark .banky-info > h2,
-.dark a:active,
-.dark #noti-heading,
-.dark .user-options.shown > a:hover,
-.dark #navigation {
-  color: #ffc947;
-}
-.dark .user-options.shown h3,
-.dark .user-options.shown h4,
-.dark .user-options.shown a,
-.dark .notification-container,
-.dark #noti-content,
-.dark .main.wide,
-.dark .main.wide h3,
-.dark footer,
-.dark footer a {
-  color: #fdfcfa;
-}
-.dark #navigation {
-  background-color: #ffc947;
-  color: #185adb;
 }
 
 html,
@@ -671,6 +602,10 @@ body,
     align-items: center;
     gap: 15px;
     padding-left: 5px;
+  }
+  .deposit-content :first-child img,
+  .deposit-content li img {
+    width: 30px;
   }
   .deposits .show-all {
     margin-top: 0;
@@ -1364,9 +1299,6 @@ nav ul li {
   .deposit-content {
     font-size: 13px;
   }
-  .deposit-content img {
-    width: 35px;
-  }
   .transaction-content {
     white-space: nowrap;
     list-style: none;
@@ -1480,7 +1412,7 @@ nav ul li {
     height: 66px;
   }
   .rate-data .currency > img {
-    width: 45px;
+    width: 40px;
   }
   .rate-data::after {
     content: "";
