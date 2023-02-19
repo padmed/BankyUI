@@ -471,6 +471,9 @@ nav {
 
   .deposit-content {
     font-size: 13px;
+    img {
+      width: 35px;
+    }
   }
 
   .transaction-content {
@@ -599,7 +602,7 @@ nav {
     height: 66px;
 
     .currency > img {
-      width: 40px;
+      width: 45px;
     }
 
     &::after {
