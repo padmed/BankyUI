@@ -106,6 +106,9 @@
 .dark .notification-container,
 .dark .user-options,
 .dark .more-dropdown,
+.dark .user-options.shown::before,
+.dark .transaction-content .more-dropdown::before,
+.dark .notification-content::before,
 .dark footer {
   background-color: #083358;
 }
@@ -1459,34 +1462,6 @@ nav ul li {
     width: 92%;
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
-  .light .icon-blue {
-    opacity: 1;
-    visibility: visible;
-    display: block;
-  }
-  .light .icon-yellow {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-  }
-  .dark .icon-yellow .icon-blue {
-    opacity: 1;
-    visibility: visible;
-    display: block;
-  }
-  .dark .icon-blue {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-  }
-  .dark .more-dropdown :first-child {
-    height: 30%;
-  }
-  .dark .more-dropdown :last-child {
-    height: 70%;
-    text-align: center;
-    padding-top: 10px;
-  }
   .more-dropdown.more-dropdown-active {
     visibility: visible;
     opacity: 1;
@@ -1566,5 +1541,33 @@ nav ul li {
   }
   .desktop footer .createdBy {
     white-space: nowrap;
+  }
+  .light .icon-blue {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+  .light .icon-yellow {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .dark .icon-yellow .icon-blue {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+  .dark .icon-blue {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+  .dark .more-dropdown :first-child {
+    height: 30%;
+  }
+  .dark .more-dropdown :last-child {
+    height: 70%;
+    text-align: center;
+    padding-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

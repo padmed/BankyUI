@@ -136,6 +136,9 @@ $dark-blue: #0d63a5;
   .notification-container,
   .user-options,
   .more-dropdown,
+  .user-options.shown::before,
+  .transaction-content .more-dropdown::before,
+  .notification-content::before,
   footer {
     background-color: $dark;
   }
