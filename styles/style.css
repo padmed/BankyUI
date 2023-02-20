@@ -1459,13 +1459,25 @@ nav ul li {
     width: 92%;
     border-bottom: 1px solid rgba(24, 90, 219, 0.3);
   }
-  .light .more.yellow {
-    opacity: 0;
-    visibility: hidden;
+  .light .icon-blue {
+    opacity: 1;
+    visibility: visible;
+    display: block;
   }
-  .dark .more.blue {
+  .light .icon-yellow {
     opacity: 0;
     visibility: hidden;
+    display: none;
+  }
+  .dark .icon-yellow .icon-blue {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  .dark .icon-blue {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
   }
   .dark .more-dropdown :first-child {
     height: 30%;

@@ -561,14 +561,32 @@ nav {
     }
   }
 
-  .light .more.yellow {
-    opacity: 0;
-    visibility: hidden;
-  }
+  .light {
+    .icon-blue {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+    }
 
-  .dark .more.blue {
-    opacity: 0;
-    visibility: hidden;
+    .icon-yellow {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+  }
+  .dark {
+    .icon-yellow {
+      .icon-blue {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+      }
+    }
+    .icon-blue {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
   }
 
   .dark .more-dropdown {
