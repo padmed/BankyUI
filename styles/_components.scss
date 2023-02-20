@@ -561,6 +561,27 @@ nav {
     }
   }
 
+  .light .more.yellow {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .dark .more.blue {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .dark .more-dropdown {
+    :first-child {
+      height: 30%;
+    }
+    :last-child {
+      height: 70%;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+
   .more-dropdown.more-dropdown-active {
     visibility: visible;
     opacity: 1;
