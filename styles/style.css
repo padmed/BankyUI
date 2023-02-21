@@ -112,6 +112,9 @@
 .dark footer {
   background-color: #083358;
 }
+.dark .user-options svg {
+  fill: #ffc947;
+}
 .dark .more-dropdown span:hover,
 .dark .transaction-content:hover,
 .dark .contact:hover,

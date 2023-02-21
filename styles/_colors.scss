@@ -143,6 +143,10 @@ $dark-blue: #0d63a5;
     background-color: $dark;
   }
 
+  .user-options svg {
+    fill: $yellow;
+  }
+
   .more-dropdown span:hover,
   .transaction-content:hover,
   .contact:hover,
