@@ -114,7 +114,8 @@
 }
 .dark .user-options svg,
 .dark .search svg,
-.dark .close {
+.dark .close,
+.dark .show-all svg {
   fill: #ffc947;
 }
 .dark .more-dropdown span:hover,
@@ -1348,14 +1349,14 @@ nav ul li {
     transition: 1s;
     font-weight: 600;
   }
-  .show-all img {
+  .show-all svg {
     width: 10px;
     transition: 0.3s;
   }
-  .show-all:hover img {
+  .show-all:hover svg {
     transform: translateX(7px);
   }
-  .show-all:active img {
+  .show-all:active svg {
     transform: none;
   }
   .deposit-content {

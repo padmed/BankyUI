@@ -418,16 +418,16 @@ nav {
     transition: 1s;
     font-weight: 600;
 
-    img {
+    svg {
       width: 10px;
       transition: 0.3s;
     }
 
-    &:hover img {
+    &:hover svg {
       transform: translateX(7px);
     }
 
-    &:active img {
+    &:active svg {
       transform: none;
     }
   }
