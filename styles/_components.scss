@@ -20,7 +20,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 3px solid base.$blue;
+  border: 3px solid colors.$blue;
   border-radius: 10px;
   display: grid;
   height: 180px;
@@ -92,7 +92,7 @@
 }
 
 .active.photo-placeholder {
-  box-shadow: 0 0 4px 2px base.$blue;
+  box-shadow: 0 0 4px 2px colors.$blue;
   transform: scale(1.1);
 }
 
@@ -122,7 +122,7 @@
 
 nav {
   width: 75%;
-  border: 2px solid base.$blue;
+  border: 2px solid colors.$blue;
   justify-self: center;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -162,7 +162,7 @@ nav {
 
   .search {
     border-radius: 18px;
-    border: 2px solid base.$yellow;
+    border: 2px solid colors.$yellow;
 
     input[type="text"] {
       border: none;
@@ -181,7 +181,7 @@ nav {
     .profile-photo {
       min-width: 35px;
       min-height: 35px;
-      border: 3px solid base.$yellow;
+      border: 3px solid colors.$yellow;
       border-radius: 50%;
       cursor: pointer;
       background-image: url("../img/person6.png");
@@ -397,13 +397,14 @@ nav {
     @include base.content-style;
     font-weight: 600;
     font-size: 15px;
+
     .card-image {
       width: 60px;
       height: 40px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 2px solid base.$blue;
+      border: 2px solid colors.$blue;
       border-radius: 7px;
     }
 
@@ -454,7 +455,7 @@ nav {
       height: fit-content;
 
       &:hover {
-        border: 1px solid base.$blue;
+        border: 1px solid colors.$blue;
       }
 
       &:active {
@@ -530,7 +531,7 @@ nav {
     }
 
     .more-dropdown {
-      border: 2px solid base.$blue;
+      border: 2px solid colors.$blue;
       font-size: 0px;
       width: 70px;
       height: 35px;
@@ -542,7 +543,7 @@ nav {
       span:first-of-type:before {
         content: "";
         width: 87%;
-        border-bottom: 1px solid base.$light-border-blue;
+        border-bottom: 1px solid colors.$light-border-blue;
       }
 
       &::before {
@@ -558,7 +559,7 @@ nav {
     &::after {
       content: "";
       width: 92%;
-      border-bottom: 1px solid base.$light-border-blue;
+      border-bottom: 1px solid colors.$light-border-blue;
     }
   }
 
@@ -577,7 +578,7 @@ nav {
       &::after {
         width: 100%;
         left: 0;
-        border-bottom: 1px solid base.$light-border-blue;
+        border-bottom: 1px solid colors.$light-border-blue;
       }
     }
   }
@@ -591,7 +592,7 @@ nav {
     &::after {
       content: "";
       width: 100%;
-      border-bottom: 1px solid base.$light-border-blue;
+      border-bottom: 1px solid colors.$light-border-blue;
     }
   }
 
@@ -608,18 +609,18 @@ nav {
     &::after {
       content: "";
       width: 100%;
-      border-bottom: 1px solid base.$light-border-blue;
+      border-bottom: 1px solid colors.$light-border-blue;
     }
   }
 
   .desktop footer {
     height: 260px;
-    border-top: 30px solid base.$blue;
+    border-top: 30px solid colors.$blue;
 
     &::before {
       content: "";
       width: 100%;
-      border-bottom: 5px solid base.$yellow;
+      border-bottom: 5px solid colors.$yellow;
     }
 
     h2 {
@@ -676,6 +677,9 @@ nav {
   }
 
   .dark {
+    .card-image {
+      border: 2px solid colors.$yellow;
+    }
     .icon-yellow {
       .icon-blue {
         opacity: 1;

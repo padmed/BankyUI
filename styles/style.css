@@ -1566,6 +1566,9 @@ nav ul li {
     visibility: hidden;
     display: none;
   }
+  .dark .card-image {
+    border: 2px solid #ffc947;
+  }
   .dark .icon-yellow .icon-blue {
     opacity: 1;
     visibility: visible;
