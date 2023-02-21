@@ -90,6 +90,9 @@
 .light.desktop .photo-placeholder {
   border: 1px solid #185adb;
 }
+.light.desktop .more:hover::before {
+  background-color: #c6c6c6;
+}
 
 .dark {
   background-color: #001f3f;
@@ -109,6 +112,7 @@
 .dark .user-options.shown::before,
 .dark .transaction-content .more-dropdown::before,
 .dark .notification-content::before,
+.dark .more:hover::before,
 .dark footer {
   background-color: #083358;
 }
@@ -1431,7 +1435,6 @@ nav ul li {
     transform: scale(0);
   }
   .transaction-content .more:hover::before {
-    background-color: #c6c6c6;
     transform: scale(1);
   }
   .transaction-content .more > img {

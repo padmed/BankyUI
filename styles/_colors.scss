@@ -118,6 +118,9 @@ $dark-blue: #0d63a5;
   .photo-placeholder {
     border: 1px solid $blue;
   }
+  .more:hover::before {
+    background-color: #c6c6c6;
+  }
 }
 
 .dark {
@@ -139,6 +142,7 @@ $dark-blue: #0d63a5;
   .user-options.shown::before,
   .transaction-content .more-dropdown::before,
   .notification-content::before,
+  .more:hover::before,
   footer {
     background-color: $dark;
   }
