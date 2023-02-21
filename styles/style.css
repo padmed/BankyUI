@@ -112,7 +112,8 @@
 .dark footer {
   background-color: #083358;
 }
-.dark .user-options svg {
+.dark .user-options svg,
+.dark .search svg {
   fill: #ffc947;
 }
 .dark .more-dropdown span:hover,
@@ -153,7 +154,8 @@
 .dark .main.wide,
 .dark .main.wide h3,
 .dark footer,
-.dark footer a {
+.dark footer a,
+.dark #search-bar {
   color: #fdfcfa;
 }
 .dark #navigation {
@@ -455,7 +457,8 @@ body,
     padding-left: 10px;
     margin-bottom: 2px;
   }
-  .search img {
+  .search svg {
+    padding-top: 2px;
     padding-left: 13px;
     width: 18px;
   }
