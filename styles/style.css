@@ -113,7 +113,8 @@
   background-color: #083358;
 }
 .dark .user-options svg,
-.dark .search svg {
+.dark .search svg,
+.dark .close {
   fill: #ffc947;
 }
 .dark .more-dropdown span:hover,
@@ -547,7 +548,7 @@ body,
     top: 0px;
     right: 0px;
   }
-  .notification-container img[alt=close] {
+  .notification-container #noti-close {
     align-self: center;
     margin-right: 20px;
   }
@@ -1212,10 +1213,11 @@ nav ul li {
     height: 10px;
     transition: 0.2s;
   }
-  .notification-container img[alt=close] {
+  .notification-container #noti-close {
     width: 11px;
+    cursor: pointer;
   }
-  .notification-container img[alt=close]:hover {
+  .notification-container #noti-close:hover {
     transform: scale(1.1);
   }
   .notification-container #noti-heading {

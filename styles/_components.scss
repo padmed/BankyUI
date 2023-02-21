@@ -272,8 +272,9 @@ nav {
     height: 10px;
     transition: 0.2s;
 
-    img[alt="close"] {
+    #noti-close {
       width: 11px;
+      cursor: pointer;
 
       &:hover {
         transform: scale(1.1);
