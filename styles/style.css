@@ -115,8 +115,13 @@
 .dark .user-options svg,
 .dark .search svg,
 .dark .close,
-.dark .show-all svg {
+.dark .show-all svg,
+.dark .contact.add path,
+.dark .notification-content svg {
   fill: #ffc947;
+}
+.dark .contact.add circle {
+  stroke: #ffc947;
 }
 .dark .more-dropdown span:hover,
 .dark .transaction-content:hover,
@@ -1246,7 +1251,7 @@ nav ul li {
   .notification-content #noti-content {
     font-size: 11px;
   }
-  .notification-content img {
+  .notification-content svg {
     width: 28px;
   }
   #notification:hover,

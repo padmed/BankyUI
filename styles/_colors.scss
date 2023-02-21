@@ -146,8 +146,14 @@ $dark-blue: #0d63a5;
   .user-options svg,
   .search svg,
   .close,
-  .show-all svg {
+  .show-all svg,
+  .contact.add path,
+  .notification-content svg {
     fill: $yellow;
+  }
+
+  .contact.add circle {
+    stroke: $yellow;
   }
 
   .more-dropdown span:hover,
