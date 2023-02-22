@@ -309,7 +309,8 @@ nav {
 
   #notification,
   #notification-opened,
-  .dark-mode > img {
+  .theme > img {
+    transition: 0.2s;
     &:hover {
       transform: scale(1.1);
     }
@@ -675,7 +676,32 @@ nav {
     }
   }
 
+  // .light {
+  //   .theme #dark-mode {
+  //     opacity: 0;
+  //     visibility: hidden;
+  //     display: none;
+  //   }
+
+  //   .theme #light-mode {
+  //     opacity: 1;
+  //     visibility: visible;
+  //     display: block;
+  //   }
+  // }
+
   .dark {
+    // .theme #light-mode {
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   display: none;
+    // }
+    // .theme #dark-mode {
+    //   opacity: 1;
+    //   visibility: visible;
+    //   display: block;
+    // }
+
     .card-image {
       border: 2px solid colors.$yellow;
     }

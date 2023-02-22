@@ -1258,9 +1258,14 @@ nav ul li {
   .notification-content svg {
     width: 28px;
   }
+  #notification,
+  #notification-opened,
+  .theme > img {
+    transition: 0.2s;
+  }
   #notification:hover,
   #notification-opened:hover,
-  .dark-mode > img:hover {
+  .theme > img:hover {
     transform: scale(1.1);
   }
   .hide {

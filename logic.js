@@ -139,3 +139,34 @@ window.addEventListener("click", (event) => {
     hideMoreDropdowns();
   }
 });
+
+// light/dark modes
+
+const themeTrigger = document.querySelector(".theme");
+const page = document.querySelector(".desktop");
+
+function makePageLight(icon) {
+  page.classList.remove("dark");
+  page.classList.add("light");
+
+  icon.src = "./icons/dark-mode.svg";
+  icon.id = "dark-mode";
+}
+
+function makePageDark(icon) {
+  page.classList.remove("light");
+  page.classList.add("dark");
+
+  icon.src = "./icons/light-mode.svg";
+  icon.id = "light-mode";
+}
+
+themeTrigger.addEventListener("click", (event) => {
+  const icon = event.target;
+
+  if (icon.id === "dark-mode") {
+    makePageDark(icon);
+  } else if (icon.id === "light-mode") {
+    makePageLight(icon);
+  }
+});
