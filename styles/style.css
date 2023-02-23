@@ -1105,6 +1105,8 @@ nav {
   justify-self: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 23px;
   position: fixed;
   bottom: 0;
