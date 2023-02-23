@@ -144,29 +144,49 @@ window.addEventListener("click", (event) => {
 
 const themeTrigger = document.querySelector(".theme");
 const page = document.querySelector(".desktop");
+const darkThemeIcon = document.querySelector("#dark-mode");
+const lightThemeIcon = document.querySelector("#light-mode");
 
-function makePageLight(icon) {
+function makePageLight() {
   page.classList.remove("dark");
   page.classList.add("light");
 
-  icon.src = "./icons/dark-mode.svg";
-  icon.id = "dark-mode";
+  lightThemeIcon.style.transform = "scale(0)";
+
+  setTimeout(() => {
+    // lightThemeIcon.style.display = "none";
+    // darkThemeIcon.style.display = "block";
+    darkThemeIcon.style.transform = "scale(1)";
+  }, 200);
+
+  setTimeout(() => {
+    // darkThemeIcon.style.display = "block";
+    darkThemeIcon.style.transform = "scale(1)";
+  }, 300);
 }
 
-function makePageDark(icon) {
+function makePageDark() {
   page.classList.remove("light");
   page.classList.add("dark");
 
-  icon.src = "./icons/light-mode.svg";
-  icon.id = "light-mode";
+  darkThemeIcon.style.transform = "scale(0)";
+
+  setTimeout(() => {
+    // darkThemeIcon.style.display = "none";
+  }, 200);
+
+  setTimeout(() => {
+    // lightThemeIcon.style.display = "block";
+    lightThemeIcon.style.transform = "scale(1)";
+  }, 300);
 }
 
 themeTrigger.addEventListener("click", (event) => {
   const icon = event.target;
 
   if (icon.id === "dark-mode") {
-    makePageDark(icon);
+    makePageDark();
   } else if (icon.id === "light-mode") {
-    makePageLight(icon);
+    makePageLight();
   }
 });

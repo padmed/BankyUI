@@ -897,6 +897,21 @@ body,
     position: absolute;
     bottom: 0;
   }
+  .theme {
+    position: relative;
+  }
+  .theme #dark-mode,
+  .theme #light-mode {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 1px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .desktop > footer {
     position: relative;
     margin-top: 50px;
@@ -1214,6 +1229,10 @@ nav ul li {
   .notifivations-darkMode {
     width: 30%;
   }
+  .theme {
+    width: 25px;
+    height: 25px;
+  }
   .notification-container {
     border: 2px solid #185adb;
     border-radius: 10px;
@@ -1261,7 +1280,7 @@ nav ul li {
   #notification,
   #notification-opened,
   .theme > img {
-    transition: 0.2s;
+    transition: 0.3s;
   }
   #notification:hover,
   #notification-opened:hover,
@@ -1594,5 +1613,14 @@ nav ul li {
     height: 70%;
     text-align: center;
     padding-top: 10px;
+  }
+  #light-mode {
+    transform: scale(0);
+  }
+  #light-mode,
+  #dark-mode {
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
 }/*# sourceMappingURL=style.css.map */

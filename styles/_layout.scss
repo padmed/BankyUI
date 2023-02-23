@@ -845,6 +845,23 @@ body,
     }
   }
 
+  .theme {
+    position: relative;
+
+    #dark-mode,
+    #light-mode {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 1px;
+      margin-bottom: auto;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .desktop > footer {
     position: relative;
     margin-top: 50px;

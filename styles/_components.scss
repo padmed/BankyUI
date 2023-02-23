@@ -265,6 +265,11 @@ nav {
     width: 30%;
   }
 
+  .theme {
+    width: 25px;
+    height: 25px;
+  }
+
   .notification-container {
     @include base.desktop-options-border;
     font-size: 0px;
@@ -310,7 +315,7 @@ nav {
   #notification,
   #notification-opened,
   .theme > img {
-    transition: 0.2s;
+    transition: 0.3s;
     &:hover {
       transform: scale(1.1);
     }
@@ -676,32 +681,7 @@ nav {
     }
   }
 
-  // .light {
-  //   .theme #dark-mode {
-  //     opacity: 0;
-  //     visibility: hidden;
-  //     display: none;
-  //   }
-
-  //   .theme #light-mode {
-  //     opacity: 1;
-  //     visibility: visible;
-  //     display: block;
-  //   }
-  // }
-
   .dark {
-    // .theme #light-mode {
-    //   opacity: 0;
-    //   visibility: hidden;
-    //   display: none;
-    // }
-    // .theme #dark-mode {
-    //   opacity: 1;
-    //   visibility: visible;
-    //   display: block;
-    // }
-
     .card-image {
       border: 2px solid colors.$yellow;
     }
@@ -728,5 +708,15 @@ nav {
       text-align: center;
       padding-top: 10px;
     }
+  }
+
+  #light-mode {
+    transform: scale(0);
+  }
+
+  #light-mode,
+  #dark-mode {
+    transition: 0.25s;
+    backface-visibility: hidden;
   }
 }
