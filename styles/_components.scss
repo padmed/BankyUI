@@ -488,7 +488,6 @@ nav {
   .transaction-content {
     white-space: nowrap;
     list-style: none;
-    cursor: pointer;
 
     .contact > div {
       width: 45px;
@@ -509,6 +508,7 @@ nav {
       width: 28px;
       height: 28px;
       z-index: 0;
+      cursor: pointer;
 
       &::before {
         content: "";

@@ -1431,7 +1431,6 @@ nav ul li {
   .transaction-content {
     white-space: nowrap;
     list-style: none;
-    cursor: pointer;
   }
   .transaction-content .contact > div {
     width: 45px;
@@ -1449,6 +1448,7 @@ nav ul li {
     width: 28px;
     height: 28px;
     z-index: 0;
+    cursor: pointer;
   }
   .transaction-content .more::before {
     content: "";
