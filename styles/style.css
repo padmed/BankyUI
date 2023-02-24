@@ -555,8 +555,8 @@ body,
     grid-template-rows: 25% 75%;
     grid-template-columns: 1fr;
     z-index: 1;
-    top: 0px;
-    right: 0px;
+    top: -50px;
+    right: -135px;
   }
   .notification-container #noti-close {
     align-self: center;
@@ -1242,6 +1242,9 @@ nav ul li {
     width: 10px;
     height: 10px;
     transition: 0.2s;
+    width: 310px;
+    height: 130px;
+    font-size: 13px;
   }
   .notification-container #noti-close {
     width: 11px;
@@ -1291,13 +1294,12 @@ nav ul li {
   .hide {
     opacity: 0;
     visibility: hidden;
+    transform: scale(0);
   }
   .show {
     opacity: 1;
     visibility: visible;
-    width: 310px;
-    height: 130px;
-    font-size: 13px;
+    transform: scale(1);
   }
   .show * {
     transition: 0.3;
