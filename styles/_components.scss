@@ -154,6 +154,7 @@ nav {
   .desktop {
     display: grid;
     font-family: base.$font-nunito;
+    user-select: none;
   }
 
   header {

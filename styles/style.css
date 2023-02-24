@@ -1131,6 +1131,9 @@ nav ul li {
   .desktop {
     display: grid;
     font-family: "Nunito", sans-serif;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   header h1 {
     font-size: 25px;
