@@ -541,13 +541,17 @@ nav {
 
     .more-dropdown {
       border: 2px solid colors.$blue;
-      font-size: 0px;
-      width: 70px;
-      height: 35px;
+      // font-size: 0px;
+      // width: 70px;
+      // height: 35px;
       letter-spacing: 0px;
       border-radius: 5px;
       visibility: hidden;
       opacity: 0;
+      width: 140px;
+      height: 70px;
+      font-size: 15px;
+      transform: scale(0);
 
       span:first-of-type:before {
         content: "";
@@ -575,9 +579,7 @@ nav {
   .more-dropdown.more-dropdown-active {
     visibility: visible;
     opacity: 1;
-    width: 140px;
-    height: 70px;
-    font-size: 15px;
+    transform: scale(1);
   }
 
   .recent-transactions {
