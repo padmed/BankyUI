@@ -505,8 +505,8 @@ body,
     margin-top: 15px;
   }
   .user-options {
-    top: 20px;
-    right: 50px;
+    top: -50px;
+    right: -10px;
     position: absolute;
     padding: 10px;
     z-index: 2;
@@ -1165,25 +1165,24 @@ nav ul li {
     box-shadow: 2px 2px 10px rgba(24, 90, 219, 0.5);
     visibility: hidden;
     opacity: 0;
-    transition: 0.2s;
-    width: 0px;
-    height: 0px;
+    transition: 0.3s;
+    transform: scale(0);
     font-size: 0;
+    width: 130px;
+    height: 160px;
   }
   .user-options * {
     visibility: hidden;
     opacity: 0;
   }
   .user-options.shown {
+    transform: scale(1);
     opacity: 1;
     visibility: visible;
-    width: 130px;
-    height: 160px;
   }
   .user-options.shown * {
     visibility: visible;
     opacity: 1;
-    transition: 0.4s;
   }
   .user-options.shown svg {
     width: 13px;
