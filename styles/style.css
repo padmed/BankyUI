@@ -1118,10 +1118,8 @@ footer > a {
           user-select: none;
 }
 .card .infoBack {
-  margin: 15px;
-  padding: 1px;
-  padding-right: 3px;
-  padding-left: 3px;
+  border-radius: 5px;
+  white-space: nowrap;
 }
 
 .contact .photo-placeholder {
