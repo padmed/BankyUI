@@ -5,6 +5,162 @@
   display: none;
 }
 
+html,
+body,
+.mobile {
+  height: 100%;
+}
+
+.mobile {
+  font-family: base.$font-nunito;
+  font-weight: 800;
+  min-width: 200px;
+  letter-spacing: 3px;
+
+  .top {
+    border-bottom: 2px solid rgba(24, 90, 219, 0.3);
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+    p {
+      font-size: 18px;
+    }
+    .line {
+      border-bottom: 1px solid rgb(24, 90, 219, 0.5);
+      width: 80%;
+    }
+  }
+}
+
+.mobile header {
+  width: 100%;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  font-size: 13px;
+
+  .qrcode {
+    img {
+      width: 25px;
+      filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg)
+        brightness(116%) contrast(91%);
+    }
+  }
+}
+
+.mobile .support {
+  img {
+    width: 25px;
+    filter: invert(99%) sepia(1%) saturate(62%) hue-rotate(5deg)
+      brightness(116%) contrast(91%);
+  }
+}
+
+.mobile {
+  .top {
+    width: 100%;
+  }
+
+  .swiper {
+    width: max(99vw, 260px);
+    height: 100%;
+  }
+
+  .quick-transaction {
+    @include base.border-style;
+
+    h3 {
+      font-size: 17px;
+    }
+
+    .contact {
+      white-space: nowrap;
+      font-size: 13px;
+      width: 70px;
+    }
+  }
+}
+
+.mobile .deposits {
+  @include base.border-style;
+
+  .deposit-type {
+    width: 90%;
+
+    #first-deposit::after {
+      content: "";
+      border-bottom: 1px solid rgba(24, 90, 219, 0.4);
+      width: 100%;
+    }
+  }
+  .deposit-type img {
+    width: 40px;
+  }
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid rgba(24, 90, 219, 0.3);
+    width: 100%;
+  }
+}
+
+.transactions {
+  @include base.border-style;
+  .transactions-header {
+    img {
+      width: 20px;
+    }
+  }
+
+  .line {
+    @include base.line;
+    width: 100%;
+  }
+}
+
+.day-group {
+  width: 100%;
+
+  .date {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .line-half {
+    width: 90%;
+    border-bottom: 1px solid rgba(24, 90, 219, 0.5);
+  }
+}
+
+.transaction {
+  width: 90%;
+
+  .name {
+    font-size: min(15px, 3.5vw);
+  }
+
+  .time {
+    font-size: min(12px, 2.5vw);
+  }
+
+  .transfer-type {
+    font-size: min(12px, 2.5vw);
+    font-weight: 600;
+  }
+
+  .amount {
+    font-size: min(15px, 3.5vw);
+  }
+}
+
+footer > a {
+  height: 40px;
+  text-decoration: none;
+}
+
+.empty {
+  height: 50px;
+}
 .one {
   background-image: url(../img/holiday-illustration.jpg);
 }
@@ -22,13 +178,8 @@
   background-repeat: no-repeat;
   border: 3px solid colors.$blue;
   border-radius: 10px;
-  display: grid;
   height: 180px;
   width: 280px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
   user-select: none;
 
   .infoBack {
@@ -36,24 +187,6 @@
     padding: 1px;
     padding-right: 3px;
     padding-left: 3px;
-    border-radius: 5px;
-    white-space: nowrap;
-  }
-
-  .left {
-    justify-self: start;
-  }
-
-  .right {
-    justify-self: end;
-  }
-
-  .bottom {
-    align-self: end;
-  }
-
-  .up {
-    align-self: start;
   }
 }
 
@@ -111,38 +244,18 @@
 }
 
 .details {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
   img {
     width: 12px;
   }
 }
 
 nav {
-  display: grid;
   width: 75%;
   border: 2px solid colors.$blue;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
   border-radius: 23px;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 20px;
 
-  ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    li {
-      list-style: none;
-    }
+  ul li {
+    list-style: none;
   }
 }
 
