@@ -13,7 +13,7 @@ Banky is a user interface that I designed and built as a means to practice my Gr
 
 ### Links
 
-- Live Site URL: [Add live site URL here](padmed.github.io/bankyUI/)
+- Live Site URL: https://padmed.github.io/BankyUI/
 
 ### Built with
 
